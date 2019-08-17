@@ -1,6 +1,8 @@
-# Camilo Alberto Beltrnán Jiménez Home Page
+# Camilo Alberto Beltrán Jiménez Home Page
 
 This is a simple HTTP/CSS/JS page, it could have some errors, the idea is to show some of my proyects, keep my information update and show other people who I am and what can I do.
+
+![screenshotHomepageCamiloBeltran]()
 
 # How to run
 
