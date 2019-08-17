@@ -4,7 +4,7 @@ This is a simple HTTP/CSS/JS page, it could have some errors, the idea is to sho
 
 ![screenshotHomepageCamiloBeltran]()
 
-# How to run
+## How to run
 
 The page is very easy to run, is mostly a static HTML page. To run it, just launch any web server, e.g.:
 
