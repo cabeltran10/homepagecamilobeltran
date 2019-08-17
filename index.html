@@ -4,22 +4,67 @@
   <meta charset="UTF-8">
   <title>Home Page</title>
   <link rel="stylesheet" href="./css/main.css" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 
-  <header class="container">
-    <div class="row">
-      <h1>Camilo Beltran Portafolio</h1>
-      <nav class="col-sm-8 text-right">
-        <a href="#">Home</a>
-        <a href="#">Tab 2</a>
-        <a href="#">About Me</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">
+      <img src="./img/logos/logo.svg" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+      Camilo Beltran
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown 1
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Link 3</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+
+  <!-- Start Jumbotron -->
+  <div class="jumbotron text-center">
+    <!-- Card Title -->
+    <h4 class="card-title h4 pb-2"><strong>Camilo Alberto Beltrán Jiménez</strong></h4>
+
+    <!-- Card image -->
+    <div class="view overlay my-4">
+      <img src="./img/imgs/bannerTecho.jpeg" alt="Portada Techo">
+      <a href="#">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <h5 class="indigo-text h5 mb-4">Techo ONG</h5>
+
+    <p class="card-text">Great experience, where I just meet a lot of people that change my mind and help me to be a better person.</p>
+  </div>
+  <!-- Stop Jumbotron -->
+<!--
   <footer class="container">
     <div class="row">
       <p class="col-sm-4">
@@ -39,6 +84,91 @@
       </ul>
     </div>
   </footer>
+-->
+<!-- Footer Start -->
+<footer id="footer" class="footer-1">
+  <div class="main-footer widgets-dark typo-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget subscribe no-box">
+            <h5 class="widget-title">Camilo Beltrán<span></span></h5>
+            <p>
+              Something about me...
+            </p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget no-box">
+            <h5 class="widget-title">Quick Links<span></span></h5>
+            <ul class="thumbnail-widget">
+              <li>
+                <div class="thumb-content"><a href="#">Link 1</a></div>
+              </li>
+              <li>
+                <div class="thumb-content"><a href="#">Link 2</a></div>
+              </li>
+              <li>
+                <div class="thumb-content"><a href="#">Link 3</a></div>
+              </li>
+              <li>
+                <div class="thumb-content"><a href="#">Link 4</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget no-box">
+            <h5 class="widget-title">Get Started<span></span></h5>
+            <p>
+              Get acces...
+            </p>
+            <a href="#" class="btn" target="_blank">Register Now</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="wodget no-box">
+            <h5 class="widget-title">Contact Us<span></span></h5>
+            <p>
+              <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">ca.beltran10@uniandes.edu.co</a>
+            </p>
+            <ul class="social-footer2">
+              <li>
+                <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
+                  <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
+                  <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2019 Camilo Beltran</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
