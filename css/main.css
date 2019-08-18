@@ -11,10 +11,16 @@
   Body
   ====================== */
 
+  /* Jumbotron */
   .jumbotron {
     background-image: url("../img/imgs/bannerLago.jpg");
     background-size: cover;
     background-position: center;
+  }
+
+  /* Buttons */
+  #moreInfoBtn {
+    background-color: #252525;
   }
 
 

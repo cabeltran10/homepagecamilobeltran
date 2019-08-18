@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home Page</title>
+  <title>Home Page Camilo Beltran</title>
 
   <link rel="stylesheet" href="./css/main.css" type="text/css">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/timeLine.css">
+
+  <link rel="icon" type="image/png" href="./img/icons/cb-favicon.png">
 
 </head>
 
 
 <body>
-
   <!-- Header Start -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
       <a href="#" class="navbar-brand">
-        <img src="./img/logos/logo.svg" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+        <img src="./img/logos/cb-logo-white.png" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
         Camilo Beltran
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +28,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
+            <a class="nav-link" href="#">About Me</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,6 +71,8 @@
       </div>
       <div class="col align-self-center text-center col-xs-8 col-sm-8 col-md-8">
         <p>I am 25 years old and born in Bogota, Colombia. I currently reside in this city and I am in the last semesters of systems and computer engineering.</p>
+        <br>
+        <a href="./" class="btn btn-info" id="moreInfoBtn">More Info</a>
       </div>
     </div>
   </div>
@@ -78,110 +81,208 @@
   <!-- My Skills Start -->
 
   <div class="container">
-    <h1>My Skills</h1>
-    <h6>Some of my skills are:</h3>
-    <div class="bar front advanced" data-skill="Java"></div>
-    <div class="bar back basic" data-skill="CSS"></div>
-    <div class="bar learning" data-skill="JavaScript"></div>
-    <div class="bar back intermediate" data-skill="HTML5"></div>
-  </div>
-  <!-- My Skills End -->
+    <div class="row justify-content-center">
+      <h1>My Skills</h1>
+    </div>
+    <div class="row justify-content-center">
+      <h6>Some of my skills are:</h3>
+      </div>
+      <div class="bar front advanced" data-skill="Java"></div>
+      <div class="bar back basic" data-skill="CSS"></div>
+      <div class="bar learning" data-skill="JavaScript"></div>
+      <div class="bar back intermediate" data-skill="HTML5"></div>
 
-  <!-- Footer Start -->
-  <footer id="footer" class="footer-1">
-    <div class="main-footer widgets-dark typo-light">
-      <div class="container">
-        <div class="row">
+    </div>
+    <!-- My Skills End -->
 
-          <!-- First Col -->
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="widget subscribe no-box">
-              <h5 class="widget-title">Camilo Beltrán<span></span></h5>
-              <p>
-                If you want to know more about me, or want to get in touch, don't hesitate to write to me!
-              </p>
+    <!-- My Education Start -->
+    <div class="container">
+
+      <h1>A short timeline of my academic and professional career</h1>
+      <div id="timeline">
+        <ul id="dates">
+          <li><a href="#1993" class="selected">1993</a></li>
+          <li><a href="#2006">2006</a></li>
+          <li><a href="#2011">2011</a></li>
+          <li><a href="#2012">2012</a></li>
+          <li><a href="#2013">2013</a></li>
+          <li><a href="#2014">2014</a></li>
+          <li><a href="#2015">2015</a></li>
+          <li><a href="#2016">2016</a></li>
+        </ul>
+        <ul id="issues">
+          <li id="1993" class="selected">
+            <img src="./img/timeline/baby.png" alt="Baby Icon">
+            <h1>1993</h1>
+            <p>
+              I was born in the month of October of the year 1993, in Bogotá, Colombia
+            </p>
+          </li>
+          <li id="2006">
+            <img src="./img/timeline/ciedi.png" alt="Logo Ciedi School">
+            <h1>2006</h1>
+            <p>
+              This year I finished my primary school studies at the CIEDI school outside of Bogotá
+            </p>
+          </li>
+          <li id="2011">
+            <img src="./img/timeline/gimnorte.png" alt="Logo Gimnorte">
+            <h1>2011</h1>
+            <p>
+              This year I finished my middle school studies at the Gimnasio Del Norte in Bogotá
+            </p>
+          </li>
+          <li id="2012">
+            <img src="./img/timeline/transport.png" alt="Transport Logo">
+            <h1>2012</h1>
+            <p>
+              I started working as a logistic support in the company Agroservicios Especiales Ltda
+            </p>
+          </li>
+          <li id="2013">
+            <img src="./img/timeline/gimnorte.png" alt="Logo Gimnorte">
+            <h1>2013</h1>
+            <p>
+              I finished my high school studies at an IB school
+            </p>
+            <img src="./img/timeline/transport.png" alt="Transport Logo">
+            <p>
+              I stopped working with Agroservicios Especiales Ltda at the end of the year
+            </p>
+          </li>
+          <li id="2014">
+            <img src="./img/timeline/central-bernard.svg" alt="Central Bernard Logo">
+            <h1>2014</h1>
+            <p>
+              I worked for a few months at the Central Bernard company in Montreal, Canada
+            </p>
+          </li>
+          <li id="2015">
+            <img src="./img/timeline/bilbao-school.jpg" alt="Bilbao Logo">
+            <h1>2015</h1>
+            <p>
+              I finished gastronomy at the hotel school Bilbao Colombia
+            </p>
+          </li>
+          <li id="2016">
+            <img src="./img/timeline/andes-university.jpg" alt="Andes Logo">
+            <h1>2016</h1>
+            <p>
+              Enter the Systems and Computer Engineering program at Universidad de los Andes
+            </p>
+          </li>
+        </ul>
+        <div id="grad_top"></div>
+        <div id="grad_bottom"></div>
+        <a href="#" id="next"></a>
+        <a href="#" id="prev"></a>
+      </div>
+    </div>
+
+    <!-- My Education Finish -->
+
+
+    <!-- Footer Start -->
+    <footer id="footer" class="footer-1">
+      <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+          <div class="row">
+
+            <!-- First Col -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget subscribe no-box">
+                <h5 class="widget-title">Camilo Beltrán<span></span></h5>
+                <p>
+                  If you want to know more about me, or want to get in touch, don't hesitate to write to me!
+                </p>
+              </div>
             </div>
-          </div>
 
-          <!-- Second Col -->
+            <!-- Second Col -->
 
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="widget no-box">
-              <h5 class="widget-title">Quick Links<span></span></h5>
-              <ul class="thumbnail-widget">
-                <li>
-                  <div class="thumb-content"><a href="#">Link 1</a></div>
-                </li>
-                <li>
-                  <div class="thumb-content"><a href="#">Link 2</a></div>
-                </li>
-                <li>
-                  <div class="thumb-content"><a href="#">Link 3</a></div>
-                </li>
-                <li>
-                  <div class="thumb-content"><a href="#">Link 4</a></div>
-                </li>
-              </ul>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+                <h5 class="widget-title">Quick Links<span></span></h5>
+                <ul class="thumbnail-widget">
+                  <li>
+                    <div class="thumb-content"><a href="#">Home</a></div>
+                  </li>
+                  <li>
+                    <div class="thumb-content"><a href="#">About Me</a></div>
+                  </li>
+                  <li>
+                    <div class="thumb-content"><a href="#">Link 3</a></div>
+                  </li>
+                  <li>
+                    <div class="thumb-content"><a href="#">Link 4</a></div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-          <!-- Third Col -->
+            <!-- Third Col -->
 
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="widget no-box">
-              <h5 class="widget-title">Get Started<span></span></h5>
-              <p>
-                Get acces...
-              </p>
-              <a href="#" class="btn" target="_blank">Register Now</a>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+                <h5 class="widget-title">Get Started<span></span></h5>
+                <p>
+                  Get acces...
+                </p>
+                <a href="#" class="btn" target="_blank">Register Now</a>
+              </div>
             </div>
-          </div>
 
-          <!-- Fourth Col -->
+            <!-- Fourth Col -->
 
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="wodget no-box">
-              <h5 class="widget-title">Contact<span></span></h5>
-              <ul class="social-footer2">
-                <li>
-                  <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
-                    <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
-                  </a>
-                </li>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="wodget no-box">
+                <h5 class="widget-title">Contact<span></span></h5>
+                <ul class="social-footer2">
+                  <li>
+                    <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
+                      <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
+                    </a>
+                  </li>
 
-                <li>
-                  <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
-                    <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
-                  </a>
-                </li>
+                  <li>
+                    <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
+                      <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
+                    </a>
+                  </li>
 
-                <li>
-                  <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">
-                    <img src="./img/icons/gmail.svg" alt="gmail" width="30" height="30">
-                  </a>
-                </li>
-              </ul>
+                  <li>
+                    <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">
+                      <img src="./img/icons/gmail.svg" alt="gmail" width="30" height="30">
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer-copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>&copy; 2019 Camilo Beltran</p>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>&copy; 2019 Camilo Beltran</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- Footer End -->
+    </footer>
+    <!-- Footer End -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-</body>
-</html>
+    <!-- TimeLine JS -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js'></script>
+
+    <script src="js/timeLine.js"></script>
+
+  </body>
+  </html>
