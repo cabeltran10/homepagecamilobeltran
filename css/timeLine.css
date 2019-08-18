@@ -3,11 +3,14 @@
   padding: 0;
 }
 
-body {
+#timelineBackground {
   background: #222;
   font-family: Georgia, serif;
-  color: #fff;
+  color: #a4c2d6;
   font-size: 14px;
+  padding-top: 20px;
+  width: 100%;
+  margin: 0;
 }
 
 a {
@@ -19,16 +22,14 @@ a {
   -ms-transition: 0.5s;
   transition: 0.5s;
 }
+
+.selected {
+  margin-top: 40px;
+}
+
 a:hover,
 a.selected {
   color: #ffcc00;
-}
-
-h1,h2,h4,h5,h6 {
-  text-align: center;
-  color: #ccc;
-  text-shadow: #000 1px 1px 2px;
-  margin-bottom: 5px;
 }
 
 .sociales {
@@ -49,6 +50,7 @@ h1,h2,h4,h5,h6 {
   height: 600px;
   overflow: hidden;
   float: left;
+  margin: 0;
 }
 #dates li {
   list-style: none;
@@ -87,6 +89,7 @@ h1,h2,h4,h5,h6 {
   -ms-transform: scale(1.1,1.1);
   transform: scale(1.1,1.1);
   padding-top: 25px;
+  margin-top: 25px;
 }
 #issues li img {
   // float: left;
@@ -113,7 +116,7 @@ h1,h2,h4,h5,h6 {
   text-shadow: #000 1px 1px 2px;
 }
 #issues li p {
-  font-size: 14px;
+  font-size: 18px;
   margin: 10px 20px;
   font-weight: normal;
   line-height: 22px;

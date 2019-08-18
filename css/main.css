@@ -5,24 +5,57 @@
   /* Navbar */
   .navbar {
     background: #252525;
+    width: 100%;
   }
 
 /*====================
   Body
   ====================== */
 
+  /* About Me */
+  #aboutme {
+    height: 35rem;
+    width: 100%;
+    background-color: #03205a;
+    background-size: cover;
+    margin: 0;
+    color: #a4c2d6
+  }
+
+  /* Skill */
+  #skills {
+    background-color: #a4c2d6;
+    height: 30rem;
+    width: 100%;
+    margin: 0;
+    color: #03205a;
+  }
+
   /* Jumbotron */
   .jumbotron {
     background-image: url("../img/imgs/bannerLago.jpg");
     background-size: cover;
     background-position: center;
+    margin: 0;
+    width: 100%;
+    color: #EEE;
   }
 
   /* Buttons */
   #moreInfoBtn {
-    background-color: #252525;
+    background-color: #a4c2d6;
   }
 
+  /* All the h */
+  h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+  text-shadow: #000 1px 1px 2px;
+  margin-bottom: 5px;
+}
+
+/*====================
+  Extra
+  ====================== */
 
   @keyframes load{
     from {
@@ -71,7 +104,7 @@
     background-color: #ffcc33;
   }
   .bar.back::before{
-    background-color: #a6cfe3;
+    background-color: #03205a;
   }
 
   .bar.learning::before{
@@ -98,6 +131,7 @@
   footer .main-footer {
     padding: 20px 0;
     background: #252525;
+    width: 100%;
   }
 
   footer ul {
