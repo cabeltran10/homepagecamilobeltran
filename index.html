@@ -3,172 +3,182 @@
 <head>
   <meta charset="UTF-8">
   <title>Home Page</title>
+
   <link rel="stylesheet" href="./css/main.css" type="text/css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
+
+
 <body>
 
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">
-      <img src="./img/logos/logo.svg" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
-      Camilo Beltran
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- Header Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="./img/logos/logo.svg" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+        Camilo Beltran
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link 2</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown 1
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Link 3</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Link 1 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link 2</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown 1
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Link 3</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-  <!-- Navbar End -->
+  <!-- Header End -->
 
+  <!-- Introduction Start -->
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4">Hello, my name is Camilo Beltran</h1>
+      <p class="lead">Welcome to my personal web page</p>
+    </div>
+  </div>
+  <!-- Introduction End -->
 
-  <!-- Start Jumbotron -->
-  <div class="jumbotron text-center">
-    <!-- Card Title -->
-    <h4 class="card-title h4 pb-2"><strong>Camilo Alberto Beltrán Jiménez</strong></h4>
+  <!-- About Me Start -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col text-center col-xs-4 col-sm-4 col-md-4 align-self-center">
+        <h1>About Me</h1>
+        <img src="./img/imgs/camilo.jpg" alt="Camilo Beltran" class="img-fluid rounded-circle">
+      </div>
+      <div class="col align-self-center text-center col-xs-8 col-sm-8 col-md-8">
+        <p>I am 25 years old and born in Bogota, Colombia. I currently reside in this city and I am in the last semesters of systems and computer engineering.</p>
+      </div>
+    </div>
+  </div>
+  <!-- About Me End -->
+  <br>
+  <!-- My Skills Start -->
 
-    <!-- Card image -->
-    <div class="view overlay my-4">
-      <img src="#" alt="Portada Techo">
-      <a href="#">
-        <div class="mask rgba-white-slight"></div>
-      </a>
+  <div class="container">
+    <h1>My Skills</h1>
+    <h6>Some of my skills are:</h3>
+    <div class="bar front advanced" data-skill="Java"></div>
+    <div class="bar back basic" data-skill="CSS"></div>
+    <div class="bar learning" data-skill="JavaScript"></div>
+    <div class="bar back intermediate" data-skill="HTML5"></div>
+  </div>
+  <!-- My Skills End -->
+
+  <!-- Footer Start -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-light">
+      <div class="container">
+        <div class="row">
+
+          <!-- First Col -->
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">Camilo Beltrán<span></span></h5>
+              <p>
+                Something about me...
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Col -->
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content"><a href="#">Link 1</a></div>
+                </li>
+                <li>
+                  <div class="thumb-content"><a href="#">Link 2</a></div>
+                </li>
+                <li>
+                  <div class="thumb-content"><a href="#">Link 3</a></div>
+                </li>
+                <li>
+                  <div class="thumb-content"><a href="#">Link 4</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Third Col -->
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Get Started<span></span></h5>
+              <p>
+                Get acces...
+              </p>
+              <a href="#" class="btn" target="_blank">Register Now</a>
+            </div>
+          </div>
+
+          <!-- Fourth Col -->
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="wodget no-box">
+              <h5 class="widget-title">Contact Us<span></span></h5>
+              <p>
+                <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">ca.beltran10@uniandes.edu.co</a>
+              </p>
+              <ul class="social-footer2">
+                <li>
+                  <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
+                    <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
+                    <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <h5 class="indigo-text h5 mb-4">Techo ONG</h5>
-
-    <p class="card-text">Great experience, where I just meet a lot of people that change my mind and help me to be a better person.</p>
-  </div>
-  <!-- Stop Jumbotron -->
-<!--
-  <footer class="container">
-    <div class="row">
-      <p class="col-sm-4">
-        &copy; 2019 Camilo Beltran
-      </p>
-      <ul class="col-sm-8">
-        <li class="col-sm-1">
-          <img src="./img/icons/twitter.svg">
-        </li>
-        <li class="col-sm-1">
-          <img src="./img/icons/instagram.svg">
-        </li>
-        <li class="col-sm-1">
-          <img src="./img/icons/gmail.svg">
-        </li>
-
-      </ul>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2019 Camilo Beltran</p>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
--->
-<!-- Footer Start -->
-<footer id="footer" class="footer-1">
-  <div class="main-footer widgets-dark typo-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="widget subscribe no-box">
-            <h5 class="widget-title">Camilo Beltrán<span></span></h5>
-            <p>
-              Something about me...
-            </p>
-          </div>
-        </div>
+  <!-- Footer End -->
 
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="widget no-box">
-            <h5 class="widget-title">Quick Links<span></span></h5>
-            <ul class="thumbnail-widget">
-              <li>
-                <div class="thumb-content"><a href="#">Link 1</a></div>
-              </li>
-              <li>
-                <div class="thumb-content"><a href="#">Link 2</a></div>
-              </li>
-              <li>
-                <div class="thumb-content"><a href="#">Link 3</a></div>
-              </li>
-              <li>
-                <div class="thumb-content"><a href="#">Link 4</a></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="widget no-box">
-            <h5 class="widget-title">Get Started<span></span></h5>
-            <p>
-              Get acces...
-            </p>
-            <a href="#" class="btn" target="_blank">Register Now</a>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="wodget no-box">
-            <h5 class="widget-title">Contact Us<span></span></h5>
-            <p>
-              <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">ca.beltran10@uniandes.edu.co</a>
-            </p>
-            <ul class="social-footer2">
-              <li>
-                <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
-                  <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
-                  <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>&copy; 2019 Camilo Beltran</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- Footer End -->
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
