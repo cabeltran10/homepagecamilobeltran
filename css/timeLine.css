@@ -43,7 +43,7 @@ a.selected {
   overflow: hidden;
   margin: 40px auto;
   position: relative;
-  background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
+  background: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
 }
 #dates {
   width: 100px;
@@ -59,7 +59,7 @@ a.selected {
   line-height: 100px;
   font-size: 24px;
   padding-left: 10px;
-  background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
+  background: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
 }
 #dates a {
   line-height: 38px;
@@ -131,11 +131,11 @@ a.selected {
 }
 #grad_top {
   top: 0;
-  background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x;
+  background: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x;
 }
 #grad_bottom {
   bottom: 0;
-  background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x;
+  background: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x;
 }
 
 #next,
@@ -156,11 +156,11 @@ a.selected {
 }
 #next {
   bottom: 0;
-  background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+  background-image: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
 }
 #prev {
   top: 0;
-  background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+  background-image: url('https://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
 }
 #next.disabled,
 #prev.disabled {
