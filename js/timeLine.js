@@ -1,3 +1,4 @@
+//Falta Strict Mode
 $(function(){
   $().timelinr({
     orientation:  "vertical",
