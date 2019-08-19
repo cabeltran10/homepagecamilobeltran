@@ -4,7 +4,7 @@
 
   /* Navbar */
   .navbar {
-    background: #252525;
+    background: #03205a;
     width: 100%;
   }
 
@@ -48,10 +48,21 @@
 
   /* All the h */
   h1,h2,h3,h4,h5,h6 {
-  text-align: center;
-  text-shadow: #000 1px 1px 2px;
-  margin-bottom: 5px;
-}
+    text-align: center;
+    text-shadow: #000 1px 1px 2px;
+    margin-bottom: 5px;
+  }
+
+  .myTittle {
+    margin: 20px 0;
+  }
+
+  /* Working Experience */
+  #workExperienceBack {
+    background-color: #a4c2d6;
+    width: 100%;
+  }
+
 
 /*====================
   Extra
@@ -130,7 +141,7 @@
   /* Main Footer */
   footer .main-footer {
     padding: 20px 0;
-    background: #252525;
+    background: #03205a;
     width: 100%;
   }
 
@@ -141,7 +152,7 @@
 
   /* Copy Right Footer */
   .footer-copyright {
-    background: #222;
+    background: #03205a;
     padding: 5px 0;
   }
 
@@ -300,14 +311,14 @@
   }
 
   ul.social-footer2 {
-    margin: 0;
+    margin: 20px;
     padding: 0;
     width: auto;
   }
 
   ul.social-footer2 li {
     display: inline-block;
-    padding: 0;
+    padding: 10px;
   }
 
   ul.social-footer2 li a:hover {
