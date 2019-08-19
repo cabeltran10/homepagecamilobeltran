@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page Camilo Beltran</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/timeLine.css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/webdev.css" type="text/css">
+
+  <link rel="icon" type="image/png" href="./img/icons/cb-favicon.png">
+
+</head>
+
+
+<body>
+  <!-- Header Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="./img/logos/cb-logo-white.png" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+        Camilo Beltran
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutMe.html">About Me</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Web Development<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./html.html">HTML</a>
+              <a class="dropdown-item" href="./css.html">CSS</a>
+              <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+              <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+              <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header Finish -->
+
+  <!-- Javascript Start -->
+
+  <div class="container">
+
+    <div class="javaScript1">
+      <h1>Introduction to JavaScript</h1>
+      <div class="consola">
+        <h2>Console</h2>
+        <p>
+          En JavaScript es posible escribir en consola con el fin de revisar si lo que se esta haciendo es correcto y poder detectar errores en el momento adecuado.
+        </p>
+        <p>
+          Para poder hacer esto se usa el codigo: <code>console.log();</code>
+        </p>
+      </div>
+
+      <div class="comentarios">
+        <h2>Comments</h2>
+        <p>
+          La programacion realmente termina siendo algo muy colaborativo, por lo que se debe de poder entregar el codigo a otra persona y que este sea lo mas claro posible, para eso se pueden usar comentarios, estos se pueden insertar en un archivo <code>.js</code> con el uso de <code>//</code> al iniciar una linea. Esto no sera visible al ejecutar la aplicacion, unicamente en el codigo.
+        </p>
+        <p>
+          Tambien es posible hacer varias lineas de comentarios, para esto se usa: <code>/*</code> y se finaliza con <code>*/</code>
+        </p>
+        <p>
+          Por ultimo, para comentar en la misma linea en la que hay codigo, es posible usar la notacion: <code>/*IGNORED*/</code>, donde se reemplaza el IGNORED con el comentario.
+        </p>
+      </div>
+
+      <div class="dataTypesJs">
+        <h2>Data Types</h2>
+        <p>Son los tipos de datos con los cuales se puede programar, en el caso de JS hay 7 tipos distintos de datos:</p>
+        <ul>
+          <li>
+            <strong>Numbers:</strong> Cualquier numero, incluyendo decimales (los cuales se separan con .)
+          </li>
+          <li>
+            <strong>String:</strong> Cualquier tipo de cadena de caracteres, se pueden separar con el uso de <code>"..."</code> o de <code>'...'</code>
+          </li>
+          <li>
+            <strong>Boolean:</strong> Este tipo de datos puede ser <code>true</code> o <code>false</code>
+          </li>
+          <li>
+            <strong>Null:</strong> Este dato representa cuando no hay ningun valor. <strong>NO es como en Java, se debe asignar</strong>
+          </li>
+          <li>
+            <strong>Undefined:</strong> Se da cuando no se asigna ningun valor, se podria decir que es similar al <code>null</code> de Java, pero en JS es diferente, es decir <code>null != undefined</code>
+          </li>
+          <li>
+            <strong>Symbol:</strong> Identificadores unicos, son para programacion avanzada.
+          </li>
+          <li>
+            <strong>Object:</strong> Colecciones de datos.
+          </li>
+        </ul>
+      </div>
+
+      <div class="operadoresAritmeticos">
+        <h2>Arithmetic Operators</h2>
+        <p>
+          En JS existen varios operadores que se pueden usar:
+        </p>
+        <ul>
+          <li>
+            <strong>Add:</strong> <code>+</code>
+          </li>
+          <li>
+            <strong>Substract:</strong> <code>-</code>
+          </li>
+          <li>
+            <strong>Multiply:</strong> <code>*</code>
+          </li>
+          <li>
+            <strong>Divide:</strong> <code>/</code>
+          </li>
+          <li>
+            <strong>Remainder:</strong> <code>%</code>
+          </li>
+        </ul>
+      </div>
+
+      <div class="stringConcatenation">
+        <h2>String Concatenation</h2>
+        <p>
+          En el caso de los String, si se desea unir dos o mas String se usa el operador <code>+</code>, aunque este tambien se usa en la suma, si se usa con String funciona como concatenador.
+        </p>
+      </div>
+
+      <div class="propertiesJs">
+        <h2>Properties</h2>
+        <p>
+          Cuando se guarda algun dato en JS este queda guardado sen su tipo de dato, en el caso del String es posible preguntar ciertas cosas, como por ejemplo su tamaño, para esto se hace, por ejemplo: <code>'Hello'.length</code>, lo cual retorna el tamaño del String, es decir 5. <strong>Observar que no es como Java, es decir no requiere <code>()</code> al final.</strong>
+        </p>
+      </div>
+
+      <div class="methodsJs">
+        <h2>Methods</h2>
+        <p>
+          Para hacer uso de los metodos que tiene JS por defecto, se hace de manera similar al caso anterior, la gran diferencia es que estos si tienen <code>()</code> al final, con esto se pueden diferenciar de las propiedades como tal.
+        </p>
+        <p>Algunos metodos de String son:</p>
+        <ul>
+          <li><code>.toUpperCase()</code>: convierte la palabra o el string a mayusculas</li>
+          <li><code>.startWith()</code>: indica con que letra empieza la palabra, o el string</li>
+        </ul>
+      </div>
+
+      <div class="builtInObjects">
+        <h2>Built-in Objects</h2>
+        <p>
+          Es posible realizar operaciones mas complejas, al igual que en un futuro crear objetos para ser utilizados de la misma manera.
+        </p>
+        <p>
+          Por ejemplo existe el Objeto <code>Math</code> al cual se le pueden llamar ciertos metodos como por ejemplo: <code>Math.random()</code>, el cual redorna un numero aleatorio.
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="VariablesJs">
+      <h1>Variables</h1>
+
+      <div class="variablesPartJs">
+        <h2>Variables</h2>
+        <p>
+          Una variable es un contenedor de un valor de algun tipo. Esto permite ponerles un nombre claro para ser usados más adelante.
+        </p>
+      </div>
+
+      <div class="createVariable">
+
+        <h2>Create a Variable:</h2>
+
+        <div class="var">
+          <h3>Create a Variable: <code>var</code></h3>
+          <p>
+            Una manera de declarar variables, la cual se ha modificado a lo largo del tiempo es con el uso de <code>var</code>, esta funciona de la siguiente manera:
+          </p>
+          <p>
+            <code>var myName = 'Camilo';</code>
+          </p>
+        </div>
+
+        <div class="let">
+          <h3>Create a Variable: <code>let</code></h3>
+          <p>
+            Este tipo de variable se usa cuando en un futuro esta puede ser reasignada, se usa con valores que pueden y van a cambiar segun alguna situacion especifica o simplemente porque eso es lo que se desea. Se usa de la siguiente manera:
+            <br>
+            <code>let meal = 'Pizza';</code>
+            <br>
+            <code>meal = 'Burrito';</code>
+            <br>
+            Tambien es posible usar esta variable para elementos que no se van a inicializar.
+            <br>
+            <code>let price;</code>
+          </p>
+        </div>
+
+        <div class="const">
+          <h3>Create a Variable: <code>const</code></h3>
+          <p>
+            Este tipo de variable se usa para asignar valores que no van a cambiar, es decir constantes. La ventaja del uso de esta variable es que si en un futuro, por algun motivo se intenta cambiar el valor, JS no lo permitira y mostrara un error. Se usa de la siguiente manera:
+            <br>
+            <code>const myName = 'Camilo';</code>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mathAssignOperators">
+        <h2>Mathematical Assignment Operators</h2>
+        <p>
+          Tanbien es posible hacer operaciones matematicas por fuera de un <code>.log()</code>, con el fin de realizar las operaciones y luego asignar el valor a una variable, por ejemplo:
+          <br>
+          <code>let w = 4;</code>
+          <br>
+          <code>w = w + 1;</code>
+          <br>
+          El resultado ahora es de <code>w = 5</code>
+          <br>
+          Esto aplica para todas las operaciones matematicas dichas anteriormente.
+        </p>
+      </div>
+
+      <div class="incrementDecrement">
+        <h2>The Increment and Decrement Operator</h2>
+        <p>
+          Como en Java, es posible usar operadores como <code>++</code> o <code>--</code> para realizar operaciones. Estos funcionan igual que en Java.
+          <br>
+          <code>let a = 10;</code>
+          <br>
+          <code>a++;</code>
+          <br>
+          <code>a = 11;</code>
+          <br>
+          <code>a--;</code>
+          <br>
+          <code>a = 10;</code>
+          <br>
+          Es importante saber que tambien existen operadores como: <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>
+        </p>
+      </div>
+
+      <div class="stringConcatenationVariables">
+        <h2>String Concatenation with Variables</h2>
+        <p>
+          Cuando se usa un String y el operador <code>+</code>, este concatena este String con lo que sea que se le ponga, es decir que es posible concatenar un <code>'Hola'</code> con una variabel como las asignadas anteriormente como <code>a</code>. Esto se haria de la siguiente manera:
+          <br>
+          <code>'Hola' + a;</code>
+          <br>
+          Resultado: <code> 'Hola 10'</code>
+        </p>
+      </div>
+
+      <div class="stringInterpolation">
+        <h2>String Interpolation</h2>
+        <p>
+          Es posible usar otro tipo de notacion para concatenar Strings, en este caso se usara un metodo diferente como se ve en el siguiente ejemplo:
+          <br>
+          <code>let myName = 'Camilo';</code>
+          <br>
+          <code>let myCity = 'Bogota';</code>
+          <br>
+          <code>console.log(`My name is ${myName}. My favorite city is ${myCity}.`)</code>
+          <br>
+          En este caso se usan <code>`</code> en el String no <code>'</code> ni <code>"</code>. El resultado de lo anterior es:
+          <br>
+          <code>My name is Camilo. My favorite city is Bogota.</code>
+        </p>
+      </div>
+
+      <div class="typeofOperator">
+        <h2>typeof operator</h2>
+        <p>
+          Cuando se programa, es importante saber con que tipo de datos estamos trabajando, para eso es posible usar <code>typeof</code>, el cual dira cual es el tipo de tado, es decir si es String, Number, Boolean y demas. Se usa de la siguiente manera:
+          <br>
+          <code>const unknow1 = 'foo';</code>
+          <br>
+          <code>console.log(typeof unknow1);</code>
+          <br>
+          Dando como resultado: <code>string</code>
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="conditionalsJs">
+      <h1>Conditional Statements</h1>
+
+      <div>
+        <h2>What are Conditional Statements?</h2>
+        <p>
+          Es la manera en que se toman las decisiones en la vida, dependiendo de una situacion hago algo o hago otra cosa. Para esto se puede hacer con <code>if</code>, <code>else</code> o <code>else if</code>, adicionalmente existen operadores de comparacion, logicos, entre algunos otros.
+        </p>
+      </div>
+
+      <div class="if">
+        <h2>The if keyword</h2>
+        <p>
+          Es la manera de escribir el Si pasa x entonces hago y...
+        </p>
+        <code>if (true) {</code>
+        <br>
+        <code>console.log('This message will print!')</code>
+        <br>
+        <code>}</code>
+        <p>
+          En el interior de los <code>( )</code> tiene que ir una condicion, la cual puede ser <code>true</code> o <code>false</code>, si es true entonces se ejecuta lo que esta entre los <code>{ }</code>.
+        </p>
+      </div>
+
+      <div class="ifElse">
+        <h2>If...Else Statements</h2>
+        <p>
+          En la vida real no siempre se hace solo una accion como con el <code>if</code>, sino que se busca hacer una segunda accion cuando no se cumpla la condicion escrita, para eso se usa el comando <code>else</code>
+          <br>
+          <code>if (false) {</code>
+          <br>
+          <code>console.log('The code in this block will not run.');</code>
+          <br>
+          <code>} else {</code>
+          <br>
+          <code>console.log('But the code in this block will!');</code>
+          <br>
+          <code>}</code>
+        </p>
+      </div>
+
+      <div class="comparison">
+        <h2>Comparison Operators</h2>
+        <p>
+          Algunos operadores de comparacion son similares a los de Java por lo cual seran faciles de entender.
+          <ul>
+            <li>Less than: <code><</code></li>
+            <li>Greater than: <code>></code></li>
+            <li>Less than or equal to: <code><=</code></li>
+            <li>Greater than or equal to: <code>>=</code></li>
+            <li>Is equal to: <code>===</code></li>
+            <li>Is NOT equal to: <code>!==</code></li>
+          </ul>
+          Como se puede observar, los operadores de igualdad y diferencia si cambian en comparacion que con Java, se <strong>DEBE USAR</strong> de esta manera.
+        </p>
+      </div>
+
+      <div class="logicalOperators">
+        <h2>Logical Operators</h2>
+        <p>
+          Los operadores logicos si son igual que en Java por lo que no se hablara mucho del tema.
+          <ul>
+            <li>The and operator: <code>&&</code></li>
+            <li>The or operator: <code>||</code></li>
+            <li>The not operator: <code>!</code></li>
+          </ul>
+          Con estas se le puede dar mejor uso a los condicionales.
+        </p>
+      </div>
+
+      <div class="truthyAndFalsy">
+        <h2>Truthy and Falsy</h2>
+        <p>
+          Es otra manera de revisar que algo debe o no correr, aunque el resultado no sea propiamente <code>true</code>, se debe tener en cuenta los valores que NO son verdaderos como:
+          <ul>
+            <li><code>0</code></li>
+            <li><code>""</code> y <code>''</code></li>
+            <li><code>null</code></li>
+            <li><code>undefined</code></li>
+            <li><code>NaN</code></li>
+          </ul>
+          Todo lo demas es verdadero.
+        </p>
+        <p>
+          Es posible sacarle ventaja a esto, si por ejemplo se desea mostrar el nombre de un usuario o un texto alternativo si no esta registrado se puede hacer de la siguiente manera:
+        </p>
+        <code>let defaultName = username || 'Stranger';</code>
+      </div>
+
+      <div class="ternaryOperator">
+        <h2>Ternary Operator</h2>
+        <p>
+          Es una manera de simplificar aun mas la escritura, especialmente si se usa <code>if...else</code>
+          <br>
+          En lugar de escribir:
+          <br>
+          <code>let isNightTime = true;</code>
+          <br>
+          <code>if(isNightTime) {</code>
+          <br>
+          <code>console.log('Turn on the lights!');</code>
+          <br>
+          <code>} else {</code>
+          <br>
+          <code>console.log('Turn off the lights!');</code>
+          <br>
+          <code>}</code>
+          <br>
+          Es posible usar solo dos lineas y con eso que sea mas corto:
+          <br>
+          <code>isNightTime ? console.log('Turn on the lights!'): console.log('Turn off the lights!');</code>
+        </p>
+      </div>
+
+      <div class="elseif">
+        <h2>Else If Statements</h2>
+        <p>
+          Estos son usados cuando hay mas de dos opciones, tienen el mismo funcionamiento de Java.
+        </p>
+      </div>
+
+      <div class="switchKeyword">
+        <h2>The switch keyword</h2>
+        <p>
+          Esto se usa cuando se tienen multiples casos, con los cuales hacerlo con la forma de <code>if..else if.. else</code> se volveria bastante largo y tedioso. Para este caso se usa el siguiente formato:
+          <br>
+          <code>switch (algo) {</code>
+          <br>
+          <code>case 'caso1':</code>
+          <br>
+          <code>console.log(...);</code>
+          <br>
+          <code>break;</code>
+          <br>
+          <code>...</code>
+          <br>
+          <code>}</code>
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="functionsJs">
+      <h1>Functions</h1>
+
+      <div class="functionDeclaration">
+        <h2>Function Declarations</h2>
+        <p>
+          En JS hay muchas maneras de declarar funciones, una de ellas es la siguiente:
+        </p>
+        <img src="./img/webdev/functionDeclaration.png" alt="Function Declarations">
+        <p>
+          Mas adelante, para hacer uso de una funcion basta con llamarla como en Java, es decir que para el caso planteado se llamaria de la siguiente manera:
+          <br>
+          <code>greetWorld();</code>
+        </p>
+      </div>
+
+      <div class="parametersArguments">
+        <h2>Parameters and Arguments</h2>
+        <p>
+          Al igual que en Java, las funciones pueden tener parametros con los cuales se hara algo en su cuerpo. Funcionan de manera igual a Java.
+          <br>
+          Si por algun motivo, no se coloca nada en el valor del parametro, JS automaticamente pone un valor por defecto, puede ser definido o simplemente queda "vacio".
+          <br>
+          <code>function greeting (name = 'stranger') {</code>
+          <br>
+          <code>console.log(`Hello, ${name}!`)</code>
+          <br>
+          <code>}</code>
+          <br>
+          En el caso anterior, si no se coloca nada como parametro entonces se usa <code>'stranger'</code>, pero si se coloca otro valor se usaria el calor suministrado.
+          <br>
+        </p>
+
+        <h2>Return</h2>
+        <p>
+          Si se desea retornar algo en la funcion se usa <code>return</code> al igual que en Java.
+        </p>
+      </div>
+
+      <div class="arrowFunctions">
+        <h2>Arrow Functions</h2>
+        <p>
+          Es otra manera de escribir funciones, esto elimina la necesidad de usar la palabra <code>function</code> para la definicion de las mismas, ahora se usaria el formato <code>(...) => {...};</code>
+          <br>
+          En los <code>(...)</code> se colocarian los parametros.
+          <br>
+          La <code>=></code> apuntaria al cuerpo de la funcion.
+          <br>
+          El cuerpo estaria dentro de los <code>{...}</code>
+          <br>
+          Si no se usan parametros se usa <code>()</code>, pero si se usa UN solo parametro se pueden omitir los <code>()</code>, pero luego de esto, si se usan dos o mas, estos deben ir dentro de los <code>(...)</code>
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="scopeJs">
+      <h1>Scope</h1>
+      <p>
+        El scope se refiere a donde pueden verse las variables al igual que ser accesadas.
+      </p>
+
+      <div class="blockAndScope">
+        <h2>Block and Scope</h2>
+        <p>
+          Los bloques es el codigo que esta encerrado entre <code>{...}</code>. Esto aplica para funciones, condicionales y demas.
+        </p>
+      </div>
+
+      <div class="globalScope">
+        <h2>Global Scope</h2>
+        <p>
+          Las variables que son declaradas al exterior de cualquier bloque son conocidas como de Scope Global, por lo cual pueden ser accedidas en cualquier parte del codigo, tanto dentro de bloques como por fuera de ellos.
+        </p>
+        <h2>Block Scope</h2>
+        <p>
+          Por otra parte, si la variable fue creada AL INTERIOR del bloque, esta solo podra ser accedida en esta seccion de codigo, mas no puede ser usada en otros bloques, ni en otra parte ademas de su bloque.
+        </p>
+        <h2>Scope Pollution</h2>
+        <p>
+          Se debe mantener buenas practicas al crear variables globales, ya que como se dijo antes, estas son accesibles desde cualquier parte del codigo, por lo que no es buena idea, aunque sea tentador, el uso de demasiadas variables de ese tipo.
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="arraysJs">
+      <h1>Arrays</h1>
+      <h2>Create Arrays</h2>
+      <p>
+        En JS, los arreglos se pueden representar como listas, las cuales tienen elementos que estan enumerados como en Java.
+        <br>
+        <code>let lista = ['obj1', 'obj2', 'obj3'];</code>
+        <br>
+        Esa es la manera de crear un arreglo. Se debe tener en cuenta que es posible crear arreglos heterogeneos.
+      </p>
+
+      <h2>Accessing Elements</h2>
+      <p>
+        PAra poder acceder a los elementos de un arreglo se hace de la misma manera que en Java, es decir con un indice que permita saber a que objeto se hace referencia.
+        <br>
+        <code>list[0];</code>
+      </p>
+
+      <h2>Update Elements</h2>
+      <p>
+        De igual manera, para poder modificar ciertos elementos se puede hacer como en Java:
+        <br>
+        <code>lista[2] = 'nuevoObj3';</code>
+      </p>
+
+      <h2>Arrays with let and const</h2>
+      <p>
+        Para la creacion de arreglos se puede usar <code>let</code> o <code>const</code> sin ningun inconveniente, pero se debe tener en cuenta que se aplican las normas vistas antes, <code>let</code> permite modificaciones, pero en el caso de los arreglos es diferente ya que los elementos al interior del <code>const</code> son modificables, pero no se puede reemplazar el arreglo con uno nuevo.
+      </p>
+
+      <h2>The .push() Method</h2>
+      <p>
+        Con los arreglos de JS es posible agregar nuevos elementos para que la lista tenga más elementos, para eso se usa <code>.push(...)</code>, con esto se logra adicionar elementos.
+      </p>
+
+      <h2>The .pop() Method</h2>
+      <p>
+        Es el opuesto al <code>.push(...)</code>, adicionalmente este no tiene ningun elemento en los <code>(...)</code> ya que funciona para retirar elementos de una lista. Se debe tener en cuenta que el uso de este unicamente retira al elemento en la ULTIMA posicion de la lista.
+      </p>
+
+      <h2>More Array Methods</h2>
+      <p>
+        Existen muchos mas metodos para las listas, entre ellos: <code>.join()</code>, <code>.slice()</code>, <code>.splice()</code>, entre otros mas.
+      </p>
+    </div>
+
+    <br>
+
+    <div class="loops">
+      <h1>Loops</h1>
+      <p>
+        Cuando se desea hacer algo de manera reiterada hasta que suceda algo especifico se conoce como Loop, en lo cual, por ejemplo, es como el hecho de comer, uno come y come hasta que este lleno, al momento de estar lleno se detiene.
+      </p>
+      <h2>The For Loop</h2>
+      <p>
+        Este se usa cuando no se desea escribir exactamente el mismo codigo una y otra vez, por lo cual se puede hacer uso de el, funciona como en Java.
+      </p>
+      <code>for (let counter = 0; counter < 4; counter++) {...}</code>
+      <p>
+        Se debe tener en cuenta, que como en Java, es posible recorrer los arreglos de diferentes formas, esto tambien quiere decir que funciona del ultimo al primero, empezando en el medio, entre otras formas de recorerlo.
+      </p>
+      <h2>Looping an Array</h2>
+      <p>
+        Asi como en Java, es posible recorrer un arreglo con el fin de no decirle hasta que posicion se desea recorrer sino hacer uso de <code>.length</code>.
+        <br>
+        Tambien es posible hacer uso de los doble recorridos como en Java.
+      </p>
+      <h2>The While Loop</h2>
+      <p>
+        Tambien es posible realizar loops con el uso de while, este se hace igual que en Java.
+      </p>
+      <h2>Do...While Statements</h2>
+      <p>
+        Esto se usa mas que todo cuando se desea que el cuerpo del while se ejecute al menos una vez ya que primero ejecuta el cuerpo y luego si revisa la condicion para ver si vuelve a ejecutar el cuerpo.
+      </p>
+      <h2>The break Keyword</h2>
+      <p>
+        Tal como en java, se puede usar la palabra <code>break;</code> con el fin de detener la ejecucion de un bloque en ese momento, esto permite romper loops y muchas otras cosas mas.
+      </p>
+    </div>
+
+    <br>
+
+    <div class="highOrderFunctions">
+      <h1>Higher-Order Functions</h1>
+
+      <h2>Functions as Data</h2>
+      <p>
+        Es posible hasignar a una funcion una tarea como escribir en consola, luego una funcion totalmente distinta puede llamar a esta primera para que ella se encargue de escribir, incluso cuando originalmente fue llamada la segunda funcion, esto permite simplificar las funciones para darles nombres mas claros y un mejor uso.
+      </p>
+
+      <h2>Functions as Parameters</h2>
+      <p>
+        Tambien es posible pasar funciones como parametros. Esto permite el uso de otras funciones para calcular cosas o escribir, o muchas otras cosas antes de que llegue esta informacion a la funcion actual.
+      </p>
+    </div>
+
+    <br>
+
+    <div class="iterators">
+      <h1>Iterators</h1>
+
+      <h2>Introduction to Iterators</h2>
+      <p>
+        Es similar al <code>for</code> que se vio anteriormente, pero es aun mucho mas potente y son propios de los arreglos. Los siguientes son Iterators: <code>.forEach()</code>, <code>.map()</code> y <code>.filter()</code>.
+      </p>
+
+      <h2>The .forEach() Method</h2>
+      <img src="./img/webdev/forEach.png" alt="ForEach Method">
+      <p>
+        Este ejecuta EXACTAMENTE el mismo codigo sobre cada uno de los elementos del arreglo.
+      </p>
+
+      <h2>The .map() Method</h2>
+      <img src="./img/webdev/mapMethod.png" alt="The Map Method">
+      <p>
+        Este metodo lo que hace es que toma un argumento de una funcion, luego toma un arreglo y como resultado da un nuevo arreglo segun la funcion dada.
+      </p>
+
+      <h2>The .filter() Method</h2>
+      <img src="./img/webdev/filterMethod.png" alt="Filter Method">
+      <p>
+        Este se usa para hacer filtros en un arreglo, su resultado final es otro arreglo con los elementos filtrados. Se puede filtrar de diferentes maneras.
+      </p>
+
+      <h2>The .findIndex() Method</h2>
+      <img src="./img/webdev/findIndex.png" alt="Find Index Method">
+      <p>
+        Este metodo se usa con el fin de encontrar el indice del primer elemento que cumpla cierta condicion.
+      </p>
+
+      <h2>The .reduce() Method</h2>
+      <img src="./img/webdev/reduceMethod.png" alt="Reduce Method">
+      <p>
+        Es una manera de juntos o hacer algo con todos los elementos de un arreglo.
+      </p>
+    </div>
+  </div>
+
+  <!-- Javascript Finish -->
+
+
+  <!-- Footer Start -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-light">
+      <div class="container">
+        <div class="row">
+
+          <!-- First Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">Camilo Beltrán<span></span></h5>
+              <p>
+                If you want to know more about me, or want to get in touch, don't hesitate to write to me!
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content"><a href="./index.html">Home</a></div>
+                </li>
+                <li>
+                  <div class="thumb-content"><a href="./aboutMe.html">About Me</a></div>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Web Development
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./html.html">HTML</a>
+                    <a class="dropdown-item" href="./css.html">CSS</a>
+                    <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+                    <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+                    <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Fourth Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="wodget no-box">
+              <h5 class="widget-title">Contact<span></span></h5>
+              <ul class="social-footer2">
+                <li>
+                  <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
+                    <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
+                    <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">
+                    <img src="./img/icons/gmail.svg" alt="gmail" width="30" height="30">
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2019 Camilo Beltran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Finish -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- TimeLine JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+
+  <script src="js/timeLine.js"></script>
+</body>
+</html>

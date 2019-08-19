@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page Camilo Beltran</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/timeLine.css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/webdev.css" type="text/css">
+
+  <link rel="icon" type="image/png" href="./img/icons/cb-favicon.png">
+
+</head>
+
+
+<body>
+  <!-- Header Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="./img/logos/cb-logo-white.png" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+        Camilo Beltran
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutMe.html">About Me</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Web Development<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./html.html">HTML</a>
+              <a class="dropdown-item" href="./css.html">CSS</a>
+              <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+              <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+              <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header Finish -->
+
+  <!-- CSS Start -->
+
+  <div class="container">
+    <h1>Link to a Stylesheet</h1>
+    <p>
+      Para poder usar CSS es necesario realizar un <code>link</code> con el archivo que contiene las propiedades que deseamos, para esto se usa el tag <code>link</code>.
+      Este tag cuenta con varios atributos: <code>rel</code>, <code>type</code> y por ultimo <code>href</code>.
+      <ul>
+        <li>
+          <p>
+            <code>rel</code>: Relacion con el archivo, en este caso es "stylesheet"
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>type</code>: Especifica el typo de archivo, en este caso es "text/css"
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>href</code>: Especifica la ruta donde se encuentra el archivo, <strong>puede ser una ruta externa</strong>.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <h1>Anatomia de una regla CSS</h1>
+    <p>
+      Las reglas se deben escribir de una manera especifica, si no se sigue dicha regla simplemente no funciona.
+    </p>
+    <img src="./img/webdev/cssRule.png" alt="Reglas escritura CSS">
+
+    <h1>Algunas propiedades</h1>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <code>font-family</code>: Usado para especificar que tipografia se va a usar (i.e. Georgia, Arial, ...). Es posible asignar mas de una tipografia y seprar con (,) con el fin de que si se da el caso de que una no funciona por no estar instalada, usa la siguiente.
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>color</code>: Usado para cambiar el color de la letra, linea o demas. Se puede usar diferentes maneras para definirlo, alguos ya existen en CSS y se pueden llamar por su nombre pero es mejor el uso de <strong>Hexadecimal</strong> (#RRGGBB) o de <strong>RGB</strong> (rgb(128,0,128)). De ambas maneras es posible usarse.
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>.class</code>: Usado para referirse a alguna clase, con el fin de poder asignarle valores personalizados a solo esa clase. Se usa un (.) al inicio y se define lo demas en el cuerpo.
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>font-size</code>: Se usa para cambio de tamaño de la letra. Se puede usar <code>XXpx</code> (pixeles), <code>XXrem</code> (tamaño default por el browser) o <code>XXem</code> (tamaño relativo segun el tamaño de la pantalla)
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>background-image</code>: Se usa para colocar una imagen de fondo, teniendo en cuenta que se aplicara a donde sea solicitado. Tiene una forma especifica de declararse:
+            <code>background-image: url(rutaImagen.png);</code>
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>#id</code>: Usado para identificar elementos, preferiblemente y por buenas practicas, un UNICO elemento. Funciona como el caso de las clases.
+            <strong>Se debe tener en cuenta que este sobre escribe a los demas.</strong>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+  </div>
+
+  <!-- CSS Finish -->
+
+
+  <!-- Footer Start -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-light">
+      <div class="container">
+        <div class="row">
+
+          <!-- First Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">Camilo Beltrán<span></span></h5>
+              <p>
+                If you want to know more about me, or want to get in touch, don't hesitate to write to me!
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content"><a href="./index.html">Home</a></div>
+                </li>
+                <li>
+                  <div class="thumb-content"><a href="./aboutMe.html">About Me</a></div>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Web Development
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./html.html">HTML</a>
+                    <a class="dropdown-item" href="./css.html">CSS</a>
+                    <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+                    <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+                    <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Fourth Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="wodget no-box">
+              <h5 class="widget-title">Contact<span></span></h5>
+              <ul class="social-footer2">
+                <li>
+                  <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
+                    <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
+                    <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">
+                    <img src="./img/icons/gmail.svg" alt="gmail" width="30" height="30">
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2019 Camilo Beltran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Finish -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- TimeLine JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+
+  <script src="js/timeLine.js"></script>
+</body>
+</html>

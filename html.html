@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page Camilo Beltran</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/timeLine.css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/webdev.css" type="text/css">
+
+  <link rel="icon" type="image/png" href="./img/icons/cb-favicon.png">
+
+</head>
+
+
+<body>
+  <!-- Header Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="./img/logos/cb-logo-white.png" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+        Camilo Beltran
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutMe.html">About Me</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Web Development<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./html.html">HTML</a>
+              <a class="dropdown-item" href="./css.html">CSS</a>
+              <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+              <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+              <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header Finish -->
+
+  <!-- HTML Start -->
+
+  <div class="container">
+    <h1>Elementos HTML</h1>
+    <br>
+    <div class="tags">
+      <p>
+        Los elementos del HTML deben tener una serie de tags, con los cuales se define de que tipo son y esto afecta sus caracteristicas.
+      </p>
+      <h1>Esto es un elemento con tag h1</h1>
+      <h2>Esto es un elemento con tag h2</h2>
+      <h3>Esto es un elemento con tag h3</h3>
+      <h4>Esto es un elemento con tag h4</h4>
+      <h5>Esto es un elemento con tag h5</h5>
+      <h6>Esto es un elemento con tag h6</h6>
+
+      <br>
+
+      <h1>Tags p</h1>
+
+      <p>
+        Esto es un tag usando p, se usa para parrafos
+      </p>
+
+      <br>
+
+      <h1>Anchor Element</h1>
+      <p>
+        Este tipo de elementos es usado para hacer hipervinculos, los cuales tienen la caracteristica de que se ven <a href="">asi</a>. Al hacer click sobre ellos se dirigira a la ruta especificada en el <code>href</code> que se asigna en el tag. Si se referencia un elemento local no es necesario toda la ruta sino la necesaria para encontrarlo, caso diferente a cuando es un elemento externo de nuestra pagina web.
+        <br>
+        Su declaracion se puede ver con un ejemplo en la siguiente imagen.
+      </p>
+
+      <img src="./img/webdev/anchor-element.png" alt="Declaracion elemento de tipo anchor">
+
+      <br>
+
+      h1>Imagenes</h1>
+      <p>
+        Para agregar imagenes se debe tener en cuenta algunas buenas practicas como el uso del atributo <code>alt</code>, es un nombre que se le da a la imagen que sea entendible para el caso en que la pagina falle y no sea posible procesar la imagen.
+      </p>
+
+      <br>
+
+      <h1>Videos</h1>
+      <p>
+        Tambien es posible agregar videos de una pagina externa o de un archivo local, se debe definir el <code>width</code> y el <code>height</code> que se le desea asignar al espacio del video. Adicionalmente se puede usar <code>controls</code> si se desea agregar el poton de play y volumen, y por ultimo un <code>type</code> para especificar el tipo del video.
+        <br>
+        Se usa el tag <code>video</code>, en este se asignan los valores de <code>width</code> y de <code>height</code>, en su interior se coloca el tag <code>source</code>, en este se incluye el <code>src</code>, es decir la ruta del video, y el <code>type</code>.
+      </p>
+
+      <video width="320" height="240" controls>
+        <source src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/ollie.mp4" type="video/mp4"/>
+      </video>
+
+      <h1>Listas</h1>
+
+      <p>
+        Existen como tal diferentes tipos de listas en HTML.
+      </p>
+      <ul>
+        <li>Lista</li>
+        <li>Sin orden</li>
+      </ul>
+
+      <br>
+
+      <ol>
+        <li>Lista</li>
+        <li>Con orden</li>
+      </ol>
+
+      <h2>Parent and Child Elements</h2>
+
+      <p>Aca se introduce un nuevo concepto, el concepto de padres he hijos, el cual se ha utilizado anteriormente:</p>
+
+      <img src="./img/webdev/parent-child.png" alt="Parent and Child image">
+
+      <h1>Div</h1>
+      <p>
+        El uso del tag <code>div</code> permite agrupar los elementos de diferentes maneras con el fin de luego organizarlos en la pagina de una manera mas sencilla y con esto llevar todo el bloque a la posicion que uno desee. Puede tener el atributo <code>class</code>.
+      </p>
+    </div>
+  </div>
+
+  <!-- HTML Finish -->
+
+
+  <!-- Footer Start -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-light">
+      <div class="container">
+        <div class="row">
+
+          <!-- First Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">Camilo Beltrán<span></span></h5>
+              <p>
+                If you want to know more about me, or want to get in touch, don't hesitate to write to me!
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content"><a href="./index.html">Home</a></div>
+                </li>
+                <li>
+                  <div class="thumb-content"><a href="./aboutMe.html">About Me</a></div>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Web Development
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./html.html">HTML</a>
+                    <a class="dropdown-item" href="./css.html">CSS</a>
+                    <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+                    <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+                    <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Fourth Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="wodget no-box">
+              <h5 class="widget-title">Contact<span></span></h5>
+              <ul class="social-footer2">
+                <li>
+                  <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
+                    <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
+                    <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">
+                    <img src="./img/icons/gmail.svg" alt="gmail" width="30" height="30">
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2019 Camilo Beltran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Finish -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- TimeLine JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+
+  <script src="js/timeLine.js"></script>
+</body>
+</html>

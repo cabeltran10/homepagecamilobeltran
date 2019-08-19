@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page Camilo Beltran</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/timeLine.css" type="text/css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/webdev.css" type="text/css">
+
+  <link rel="icon" type="image/png" href="./img/icons/cb-favicon.png">
+
+</head>
+
+
+<body>
+  <!-- Header Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="./img/logos/cb-logo-white.png" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+        Camilo Beltran
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutMe.html">About Me</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Web Development<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./html.html">HTML</a>
+              <a class="dropdown-item" href="./css.html">CSS</a>
+              <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+              <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+              <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header Finish -->
+
+  <!-- Bootstrap Start -->
+
+  <section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Homemade Goods</h2>
+        <h3>This Year's Best</h3>
+        <a class="btn btn-primary" href="#" role="button">See all</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row">
+      <figure class="col-sm-6">
+        <p>kitchen</p>
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/kitchen.jpg"/>
+      </figure>
+      <figure class="col-sm-6">
+        <p>woodwork</p>
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/woodwork.jpg"/>
+      </figure>
+    </div>
+    <div class="row">
+      <figure class="col-sm-6">
+        <p>gifts</p>
+        <img src="
+        https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/gifts.jpg"/>
+      </figure>
+      <figure class="col-sm-6">
+        <p>antiques</p>
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/antique.jpg"/>
+      </figure>
+    </div>
+  </section>
+
+  <div class="main">
+
+    <div class="container connectingBoostrap">
+      <h1>Conectarse a Bootstrap</h1>
+      <p>
+        Antes que nada, tal como con un archivo CSS, se debe hacer una conexion a Bootstrap para que funcione, por lo cual es necesario agregar el siguiente codigo en el <code>head</code> del HTML:
+      </p>
+      <code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/></code>
+    </div>
+
+    <div class="container onTheGrid">
+      <h1>On the Grid</h1>
+      <p>
+        Una de las cosas más utiles de Bootstrap es que permite el uso de un Grid con el cual se puede personalizar mejor la pagina web.
+      </p>
+      <img src="./img/webdev/bootstrapGrip.png" alt="Bootstrap Grid">
+    </div>
+
+    <div class="container headerNavigation">
+      <h1>Header/Navigation</h1>
+      <p>
+        Esta pagina tiene varios cambios que hacen que se vea diferente, para empezar tiene un header que sigue el siguiente codigo:
+      </p>
+      <code>
+        &lt;header class="container">
+        &lt;div class="row">
+        &lt;h1 class="col-sm-4">Heading</h1>
+        &lt;nav class="col-sm-8 text-right">
+        &lt;p>nav item 1&lt;/p>
+        &lt;p>nav item 2&lt;/p>
+        &lt;p>nav item 3&lt;/p>
+        &lt;/nav>
+        &lt;/div>
+        &lt;/header>
+      </code>
+    </div>
+
+    <div class="container jumbotronExample">
+      <h1>The jumbotron</h1>
+      <p>
+        Esta es un area grande, bajo el <code>header</code> que se utiliza para poner informacion, entre la informacion que se puede colocar hay, por ejemplo, imagenes. El codigo se puede ver en la seccion de HTML justo bajo el <code>header</code>
+      </p>
+    </div>
+
+    <div class="container supportingContent">
+      <h1>Supporting Content</h1>
+      <p>
+        Es la manera de colocar contenido usando Bootstrap, con esto se puede mejorar la interfaz y acomodar a la manera deseada. Para esto se usa el tag <code>container</code>, el cual permite acomodar el contenido de diferentes maneras.
+      </p>
+    </div>
+
+    <div class="container footersExample">
+      <h1>Footers</h1>
+      <p>
+        Esta es la parte mas baja de la pagina web, donde se ven elementos como la informacion legal o datos importantes de la empresa o del dueño de la pagina web.
+      </p>
+      <p>
+        Se usa el tag <code>footer</code> para separar esta seccion, pero igualmente va dentro del <code>body</code>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap Finish -->
+
+
+  <!-- Footer Start -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-light">
+      <div class="container">
+        <div class="row">
+
+          <!-- First Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">Camilo Beltrán<span></span></h5>
+              <p>
+                If you want to know more about me, or want to get in touch, don't hesitate to write to me!
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content"><a href="./index.html">Home</a></div>
+                </li>
+                <li>
+                  <div class="thumb-content"><a href="./aboutMe.html">About Me</a></div>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Web Development
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./html.html">HTML</a>
+                    <a class="dropdown-item" href="./css.html">CSS</a>
+                    <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+                    <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+                    <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Fourth Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="wodget no-box">
+              <h5 class="widget-title">Contact<span></span></h5>
+              <ul class="social-footer2">
+                <li>
+                  <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
+                    <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
+                    <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">
+                    <img src="./img/icons/gmail.svg" alt="gmail" width="30" height="30">
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2019 Camilo Beltran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Finish -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- TimeLine JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+
+  <script src="js/timeLine.js"></script>
+</body>
+</html>

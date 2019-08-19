@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page Camilo Beltran</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/timeLine.css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/webdev.css" type="text/css">
+
+  <link rel="icon" type="image/png" href="./img/icons/cb-favicon.png">
+
+</head>
+
+
+<body>
+  <!-- Header Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="./img/logos/cb-logo-white.png" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+        Camilo Beltran
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutMe.html">About Me</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Web Development<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./html.html">HTML</a>
+              <a class="dropdown-item" href="./css.html">CSS</a>
+              <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+              <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+              <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header Finish -->
+
+  <!-- Boxmodel Start -->
+
+  <div class="container">
+
+    <h1>The Box Model</h1>
+    <p>
+      Para poder organizar los bordes se puede usar el modelo llamado The Box Model. La forma de este se muestra en la siguiente imagen.
+    </p>
+    <img src="./img/webdev/boxmodel.png" alt="The Box Model">
+
+    <br>
+
+    <div class="createBorder">
+      <h1>Create a Border</h1>
+      <p>
+        Es posible la creacion de bordes, los cuales siguen el Box Model mostrado, para esto se deben asignar 3 valores a <code>border</code>, estos valores son <code>thickness</code>, <code>type</code> y por ultimo <code>color</code>, el cual como se menciona en otra seccion puede ser RGB o Hex o definido por CSS.
+      </p>
+
+      <p class="borderExample">
+        En este parrafo se muestra un ejemplo de un borde con los siguientes valores:
+        <br>
+        <code>boder: 2px solid black;</code>
+      </p>
+    </div>
+
+    <div class="createPadding">
+      <h1>Padding</h1>
+      <p class="borderExample2">
+        El Padding es usado para dar una distancia entre el border y el elemento como tal, con el uso de esta es posible dar un espaciado con el fin de que no quede el borde pegado al elemento.
+        <br>
+        En este parrafo se usa un <code>padding: 20px</code> el resto es igual que el ejempo anterior.
+      </p>
+    </div>
+
+    <div class="createMargin">
+      <h1>Margin</h1>
+      <p class="borderExample3">
+        Similar al caso anterior, la margen es el espacio entre un elemento y otro, esto permite que por ejemplo dos cuadros no esten juntos entre ellos y con esto dar una mejor visualizacion.
+        <br>
+        En este caso se usa un <code>margin: 2rem;</code>
+      </p>
+      <p>
+        En el caso de las margenes es posible asignar un valor unicamente para alguna de las caras del elemento, por ejemplo solo la superior, o la inferior o si se desea varias a la vez sin llegar a todas. Esto tambien permite que sea puedan implementar medidas independientes.
+      </p>
+      <ul>
+        <li><code>margin-top</code></li>
+        <li><code>margin-bottom</code></li>
+        <li><code>margin-left</code></li>
+        <li><code>margin-right</code></li>
+      </ul>
+    </div>
+
+    <div class="understandDisplay">
+      <h1>Understanding Display</h1>
+      <p>
+        El Display en el que se muestra el contenido de una pagina se puede organizar de diferentes maneras, puede ser en <code>block</code> o tambien es posible que sea <code>inline</code>, las diferencias se muestran en la siguiente imagen.
+      </p>
+
+      <img src="./img/webdev/display.png" alt="Display">
+
+      <p>
+        Por defecto el Display que viene en una pagina es de tipo <code>block</code>, por lo cual si se decide cambiar se puede hacer con el uso de:
+        <br>
+        <code>displlay: inline;</code>
+      </p>
+
+      <h3>En block</h3>
+
+      <ul>
+        <li><a href="#">A</a></li>
+        <li><a href="#">B</a></li>
+        <li><a href="#">C</a></li>
+      </ul>
+
+      <h3>En inline</h3>
+
+      <nav>
+        <ul>
+          <li><a href="#">A</a></li>
+          <li><a href="#">B</a></li>
+          <li><a href="#">C</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="usingFloat">
+
+      <h1>Using Float</h1>
+      <p>
+        Esta manera se usa con el fin de poder acomodar los elementos de una manera mucho mas sencilla. Por ejemplo si se desea que un boton se encuentre a un costado de la pagina, en lugar de decir que tamaño de margen tener se le puede ubicar al lado derecho sin problema, aunque la pantalla cambie de tamaño este quedara en la misma posicion. Por ejemplo el siguiente boton:
+      </p>
+      <div class="contact-btn"><a>Contact</a></div>
+
+    </div>
+
+    <div class="displayFlex">
+      <h1>Display: Flex</h1>
+      <p>
+        El uso de <code>display:flex;</code> permite que los elementos se alineen de manera horizontal. Es posible realizar combinaciones que permiten un mejor ajuste del contenido.
+      </p>
+      <p>
+        Si se usa un padre y un hijo, se puede hacer esto con el uso de <code>flex-wrap: wrap;</code>, lo que no permite que los hijos se muevan fuera de la pagina en caso que se cambie el tamaño.
+      </p>
+      <p>
+        Por ultimo esta el <code>justify-content: center;</code>, este permite justificar el contenido para que se alineen de alguna manera en especifico.
+      </p>
+    </div>
+
+    <div class="workingPosition">
+      <h1>Working with Position</h1>
+      <p>
+        Funciona cuando se desea dejar el elemento en una posicion especifica de la pagina, esto hace que el elemento se posicione en donde uno desee segun el argumento que se desee, para esto se usa:
+
+        <br>
+
+        <code>position: relative;</code>
+        <br>
+        Luego de esto es posible usar <code>top</code>, <code>left</code>, <code>bottom</code> y <code>left</code> con el fin de asignar la posicion que se desea, por ejemplo:
+      </p>
+      <div class="positionExample">
+        <code>position: relative;</code>
+        <br>
+        <code>top: 10px;</code>
+        <br>
+        <code>left: 50px;</code>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Boxmodel Finish -->
+
+
+  <!-- Footer Start -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-light">
+      <div class="container">
+        <div class="row">
+
+          <!-- First Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">Camilo Beltrán<span></span></h5>
+              <p>
+                If you want to know more about me, or want to get in touch, don't hesitate to write to me!
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content"><a href="./index.html">Home</a></div>
+                </li>
+                <li>
+                  <div class="thumb-content"><a href="./aboutMe.html">About Me</a></div>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Web Development
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./html.html">HTML</a>
+                    <a class="dropdown-item" href="./css.html">CSS</a>
+                    <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+                    <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+                    <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Fourth Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="wodget no-box">
+              <h5 class="widget-title">Contact<span></span></h5>
+              <ul class="social-footer2">
+                <li>
+                  <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
+                    <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
+                    <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">
+                    <img src="./img/icons/gmail.svg" alt="gmail" width="30" height="30">
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2019 Camilo Beltran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Finish -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- TimeLine JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+
+  <script src="js/timeLine.js"></script>
+</body>
+</html>
