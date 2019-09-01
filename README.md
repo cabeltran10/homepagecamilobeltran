@@ -2,7 +2,7 @@
 
 This is a simple HTTP/CSS/JS page, it could have some errors, the idea is to show some of my proyects, keep my information update and show other people who I am and what can I do.
 
-![screenshotHomepageCamiloBeltran]()
+![screenshotHomeCamiloBeltran](https://raw.githubusercontent.com/cabeltran10/homepagecamilobeltran/master/screenshot.png)
 
 ## How to run
 
