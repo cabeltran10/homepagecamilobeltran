@@ -848,6 +848,68 @@
       <h1>Classes</h1>
 
       <h2>Introduction to Classes</h2>
+      <p>
+        Como JS es un lenguaje orientado a objetos, tambien es posible la creacion de clases.
+        <br>
+        Esto se usa mas que todo cuando se quieren hacer multiples objetos que sean similares, es decir que todas sus propiedades sean las mismas pero con valores distintos.
+        <br>
+        Como es posible, por ejemplo, crear un objeto perro, tambien es posible crear una clase Perro, la diferencia es que uno es simplemente un solo objeto y con el otro se pueden crear varios objetos.
+        <br>
+        De esta manera es muy eficiente y mas que todo, permitira eliminar codigo duplicado varias veces.
+      </p>
+
+      <h2>Constructor</h2>
+      <p>
+        Aunque existe una gran similitud entre crear objetos y clases, una de las diferencias mas grandes es que las clases tienen un metodo constructor.
+        <br>
+        Por convencion, los nombres de las clases empiezan con mayuscula, a diferencia de los objetos.
+        <br>
+        La manera de hacer esto es:
+      </p>
+      <img src="./img/webdev/constructorClasses.png" alt="Constructor">
+
+      <h2>Instance</h2>
+      <p>
+        Una instancia es un objeto que contiene los nombres de las propiedades y los metodos de una clase.
+        <br>
+        Es posible usar la palabra reservada <code>new</code> para la creacion de nuevas instancias.
+      </p>
+
+      <h2>Methods</h2>
+      <p>
+        La mayor diferencia entre hacer metodos en objetos a hacerlos en clases, es que en las clases NO SE SEPARAN con el uso de <code>,</code> mientras que en los objetos si. Adicionalmente a esto la estructura es muy similar.
+        <br>
+        Estos si son muy similares a Java.
+      </p>
+      <img src="./img/webdev/classMethod.png" alt="Class Method">
+
+      <h2>Method Calls</h2>
+      <p>
+        Ahora que ya se han creado metodos y demas, se busca poder llamarlos desde otra parte del programa.
+        <br>
+        La manera en que se llaman es similar a los metodos de los objetos, es decir que se puede usar la forma de escribir con el uso de <code>.</code>
+      </p>
+
+      <h2>Inheritance</h2>
+      <p>
+        Esto se usa cuando se va a crear una nueva clase, la cual comparte las propiedades con una clase ya existente. Como ejemplo, se crea una clase Animal, la cual tiene nombre y comportamiento, pero se quieren crear perros y gatos, por lo cual es posible usar estas propiedades de la clase Animal y luego agregar nuevas propiedades de las nuevas clases.
+        <br>
+        Para lograr esto se debe crear una super clase, en la cual se tienen las propiedades compartidas. Luego se usa la palabra <code>extends</code>, similar a Java, con el fin de definir que esta clase tiene las propiedades de la super clase.
+        <br>
+        En su interior, se debe hacer uso del <code>super()</code>, con el fin de asignar los valores a las propiedades de la super clase.
+        <br>
+        El <code>super()</code> se debe de usar dentro del constructor.
+        <br>
+        Se debe tener en cuenta que cuando se usa este tipo de super clases, los metodos, propiedades y demas quedan como si estuvieran en la clase pequeña, esto ya que este tendria todas las propiedades definidas para el y adicionalmente las de su superclase.
+      </p>
+
+      <h2>Static Methods</h2>
+      <p>
+        Cuando se desea crear un metodo que solo sea accesible por la super clase, se usa la palabra clase <code>static</code>, con esto es posible crear metodos que son solo utilizables cuando se crea un objeto de la super clase, mas no cuando se extiende la misma.
+      </p>
+    </div>
+
+    <div class="browserCompatibility">
 
     </div>
 
