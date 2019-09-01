@@ -668,6 +668,188 @@
       </p>
     </div>
 
+    <div class="objectsJs">
+      <h1>Objects</h1>
+
+      <h2>Introduction to Objects</h2>
+      <p>
+        En JavaScript, los objetos son contenedores que organizan datos y funciones.
+      </p>
+
+      <h2>Creating Object Literals</h2>
+      <p>
+        Los objetos pueden ser assignados a variables, para eso se hace uso de los <code>{}</code>
+        <br>
+        <code>let spaceship = {};</code>
+        <br>
+        Al llenar el objeto se usa un conjunto de llave valor, eso quiere decir que a todo lo que se va creando se le puede asignar un valor.
+        <br>
+        <code>key: value</code>
+        <br>
+        Para la creacion de varias llave valor en el interior de un objeto se usa como separador la <code>,</code> y ademas de esto se debe tener presente que a <strong>diferencia</strong> de JAva, no se finaliza con <code>;</code>
+      </p>
+
+      <h2>Accessing Properties</h2>
+      <h3>Dot-notation</h3>
+      <p>
+        Hay dos maneras de acceder a la informacion que se almacena dentro de un objeto.
+        <br>
+        La primera manera es con el uso de <code>.</code>, la manera de usar esta notacion es por ejemplo: <code>'hello'.length;</code>
+        <br>
+        En el caso anterior, se accede al objeto <code>'hello'</code> y se usa una de sus propiedades que es <code>length</code>.
+      </p>
+      <h3>Bracket Notation</h3>
+      <p>
+        La segunda forma de hacer esto es con el uso de <code>[ ]</code>. La forma de hacerlo es:
+        <br>
+        <code>'hello'[length]</code>
+      </p>
+
+      <h2>Property Assignment</h2>
+      <p>
+        Es posible cambiar el valor a las propiedades de un objeto en algun otro momento futuro a su creacion, por lo cual los objetos son mutables. La manera de hacer esto es, usando cualquiera de las notaciones anteriores:
+        <br>
+        <code>spaceship.color = 'gold';</code>
+        <br>
+        Es importante denotar que, aunque se asigne un objeto con la notacion <code>const</code> su contenido sigue siendo mutable, lo que no es posible es cambiar como tal el objeto.
+        <br>
+        Tambien es importante saber que se puede eliminar un atributo de un objeto con el uso de <code>delete</code>.
+        <br>
+        <code>delete spaceship.mission;</code>
+      </p>
+
+      <h2>Methods</h2>
+      <p>
+        Cuando se almacena una funcion en un objeto, a esto se le llama un metodo. Una propiedad es aquello que tiene un objeto, mientras que un metodo es lo que el objeto hace.
+        <br>
+        La manera de invocar un metodo es por ejemplo: <code>alienShip.invade();</code>
+      </p>
+
+      <h2>Nested Objects</h2>
+      <p>
+        Los objetos pueden tener internamente mas objetos, esto se conoce como un nested object. De igual manera como se accede al primer objeto, es posible acceder al segundo, tercero y de ahi en adelante. Se debe tener en cuenta que si uno usa el <code>.</code> para entrar al segundo objeto, es como estar parado sobre este, por lo cual se puede volver a usar la notacion <code>.</code>
+      </p>
+
+      <h2>Pass By Reference</h2>
+      <p>
+        Los objetos son "passed by reference", lo que significa que cuando se pasa una variable asignada a un objeto como un argumento a una funcion, el computador lo interpreta como algo que apunta a un lugar en la memoria. Como resultado, si la funcion cambia el valor al atributo del objeto, este va a cambiar su valor, incluso si este fue asignado con <code>const</code>.
+      </p>
+
+      <h2>Looping Through Objects</h2>
+      <p>
+        Esta herramienta que permite repetir algo multiples veces es util pero se debe saber usar con los objetos.
+        <br>
+        La manera de usarse es:
+        <br>
+        <code>for (let crewMwmber in spaceship.crew= {</code>
+        <br>
+        <code>console.log(`${crewMember}:${spaceship.crew[crewMember].name}`)</code>
+        <br>
+        <code>};</code>
+      </p>
+    </div>
+
+    <div class="advanceObjects">
+      <h1>Advance Objects</h1>
+
+      <h2>Advance Objects Introduction</h2>
+      <p>
+        Ya se hablo de objetos de JS en la parte anterior, en esta se cubriran otros temas sobre objetos
+      </p>
+      <ul>
+        <li>Como usar la palabra clave <code>this</code></li>
+        <li>Privacidad de los metodos en JS</li>
+        <li>Definiendo getters y setters</li>
+        <li>Creador de funciones</li>
+        <li>Usar tecnicas de destruccion</li>
+      </ul>
+
+      <h2>The this Keyword</h2>
+      <p>
+        En muchas situaciones se va a querer hacer llamados a otros atributos de un objeto estando en el interior del mismo. Pero no basta unicamente con llamarlo ya que si se hace esto no va a estar definido. Esto sucede cuando se crea un metodo en el interior de un objeto, y dentro de este metodo se intenta llamar algo del objeto en cuestion pero que se encuentra por fuera del metodo que se esta creando. En estos casos se puede hacer uso de la palabra clave <code>this</code>, la cual llamara al objeto en el que uno se encuentra.
+        <br>
+        Si se desea usar el this dentro de un metodo se puede hacer de la siguiente manera:
+      </p>
+      <img src="./img/webdev/thismethod.png" alt="This Method">
+
+      <h2>Arrow Functions and this</h2>
+      <p>
+        El uso de <code>this</code> se vuelve un poco mas complejo al usar arroyfunctions, esto se debe a que este tipo de funciones cambian el objeto en cuestion para el uso de <code>this</code>.
+        <br>
+        En el caso de las arrow functions, estas como tal ya definen el <code>this</code>, por lo cual al sarlo en su interior es posible que el resultado de un <code>undefined</code>.
+        <br>
+        Se debe tener bastante cuidado al usar arrow functions y <code>this</code>, muchas veces es recomendable no usar esta palabra clave para evitar problemas a futuro.
+      </p>
+
+      <h2>Privacy</h2>
+      <p>
+        Acceder y modificar informacion de objetos se convierte en algo fundamental cuando se empieza a trabajar con objetos, ya que esto permite hacer muchas cosas que muchas veces son necesarias y que para eso se usaron los objetos.
+        <br>
+        Algunos objetos en otros lenguajes, como Java, permiten asignar la privacidad de los objetos, pero en el caso de JS no lo hace.
+        <br>
+        Es una tecnica comun usar nombres con <code>_</code> al iniciar para mostrar que este valor no debe ser modificado, aunque aun sea posible hacerlo, es una manera de indicarle a otros programadores que este valor no debe ser accedido.
+      </p>
+
+      <h2>Getters</h2>
+      <p>
+        Los Getters, son metodos que encuentran y retornan un valor especifico, en Java son bastante usados.
+        <br>
+        En JS se usa la palabra clave <code>get</code> para este tipo de metodos.
+        <br>
+        Una buena practica para el uso de un Getter, es con atributos que no deben ser accedidos como se mostro anteriormente, un ejemplo de como se implementaria es el siguiente:
+      </p>
+      <img src="./img/webdev/getterExample.png" alt="Getter Example">
+
+      <h2>Setters</h2>
+      <p>
+        Asi como es posible crear metodos Getters, tambien es posible crear metodos Setters. Estos reasignan un valor a una propiedad existente en un objeto.
+        <br>
+        Son muy utiles cuando es necesario validar si el valor que se quiere asignar a la propiedad es correcto, por ejemplo, no es normal querer ponerle a una edad un String, por lo cual es posible verificar esto antes de asignar el nuevo valor a la edad de una persona.
+        <br>
+        La manera de usar un Setter es la siguiente:
+      </p>
+      <img src="./img/webdev/setterExample.png" alt="Setter Example">
+
+      <h2>Factory Functions</h2>
+      <p>
+        Esto se usa cuando se desea crear un objeto con varias propiedades a la misma vez, ya que asignar una por una podria ser tedioso y menos eficiente. Para esto es posible usar funciones que asignan el valor a verias propiedades a la misma vez.
+        <br>
+        La manera de usar esta funcion se puede ver a continuacion:
+      </p>
+      <img src="./img/webdev/factoryFunction.png" alt="Factory Function">
+
+      <h2>Property Value Shorthand</h2>
+      <p>
+        En ES6 se crearon nuevos atajos con el fin de poder hacer cosas de una manera mucho mas agil. El caso anterior, se debia asignar cada valor, pero tambien es posible hacerlo sin necesidad de esto, de tal manera que JS sabra que es cada propiedad y no es necesaria asignarla.
+        <br>
+        Un ejemplo de esto se muestra a continuacion:
+      </p>
+      <img src="./img/webdev/shorthand.png" alt="Shorthand">
+
+      <h2>Destructured Assignment</h2>
+      <p>
+        Es una manera de extraer los valores de un objeto, obteniendo el valor de la propiedad. Para esto se usa <code>{ }</code>.
+        <br>
+        Se muestra un ejemplo a continuacion:
+      </p>
+      <img src="./img/webdev/destructured.png" alt="Destructured">
+
+      <h2>Built-in Object Methods</h2>
+      <p>
+        Se debe tener en cuenta que existen ciertos metodos que existen para todos los objetos, inclusive los que uno crea sin necesidad de asignarlos.
+        <br>
+        Algunos ejemplos de esto son: <code>.valueOf()</code>, <code>.hasOwnProperty()</code>, entre otros mas.
+        <br>
+        Todos estos metodos pueden ser usados sin problema cuando se crea un objeto.
+      </p>
+    </div>
+
+    <div class="classesJs">
+      <h1>Classes</h1>
+
+      <h2>Introduction to Classes</h2>
+
+    </div>
 
   </div>
 
