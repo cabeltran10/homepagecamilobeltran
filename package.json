@@ -11,5 +11,7 @@
   "devDependencies": {
     "eslint": "^6.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "eslint-utils": ">=1.4.1"
+  }
 }
