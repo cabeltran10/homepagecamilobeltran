@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Node.js</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/timeLine.css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/webdev.css" type="text/css">
+
+  <link rel="icon" type="image/png" href="./img/icons/cb-favicon.png">
+
+</head>
+
+
+<body>
+  <!-- Header Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a href="./index.html" class="navbar-brand">
+        <img src="./img/logos/cb-logo-white.png" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+        Camilo Beltran
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Web Development<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./html.html">HTML</a>
+              <a class="dropdown-item" href="./css.html">CSS</a>
+              <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+              <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+              <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./nodejs.html">Node.js</a>
+            </div>
+          </li>
+        </ul>      </div>
+    </div>
+  </nav>
+  <!-- Header Finish -->
+
+  <!-- Node.js Start -->
+  <div class="nodeJs container">
+    <div class="nodeJsIntroduction">
+      <h1>Node.js Introduction</h1>
+      <h2>What is Node.js?</h2>
+      <ul>
+        <li>Is an open source server environment</li>
+        <li>Is free</li>
+        <li>Runs on various platforms</li>
+        <li>Uses JavaScript on the server</li>
+      </ul>
+
+      <h2>Why Node.js?</h2>
+      <p>
+        <strong>Node.js uses asynchronous programming!</strong>
+        <br>
+        The way that Node.js handles a file request:
+        <ol>
+          <li>Sends the task to the computer's file system</li>
+          <li>REady to handle the next request</li>
+          <li>When the file system has opened and read the file, the server returns the content to the client</li>
+        </ol>
+        <br>
+        Also it eliminates the waiting, and simply continues with the next request. It runs single-threaded, non-blocking, asynchronously programming, which is very memory efficient.
+      </p>
+
+      <h2>What Can Node.js Do?</h2>
+      <p>
+        Can generate dynamic page content, create, open, read, write, delete, and close files on the server, can collect from data, can add, delete, modify data in your database.
+      </p>
+
+      <h2>What is a Node.js File?</h2>
+      <ul>
+        <li>Node.js files contain tasks that will be executed on certain events</li>
+        <li>A typical event is someone trying to access a port on the server</li>
+        <li>Node.js files must be initiated on the server before having any effect</li>
+        <li>Node.js files have extension ".js"</li>
+      </ul>
+    </div>
+
+    <div class="NodeJsGetStarted">
+      <h1>Node.js Get Started</h1>
+
+      <h2>Command Line Interface</h2>
+      <p>
+        Node.js must be initiated in the Command Line Interface program of your computer.
+        <br>
+        You should go to the path where your file is
+      </p>
+
+      <h2>Initiate the Node.js File</h2>
+      <p>
+        To initiate the file that you create, you should use <code>path.../node myfirst.js</code>
+        <br>
+        It is important to know that your computer will work as the server, anyone who try to access to the port 8080 will get a "Hello World!" message, (In this example only)
+      </p>
+    </div>
+
+    <div class="nodeJsModules">
+      <h1>Node.js Modules</h1>
+
+      <h2>What is a Module in Node.js?</h2>
+      <p>
+        Consider the modules to be the same as JavaScript libraries. A set of functions you want to include in your application.
+      </p>
+
+      <h2>Built-in Modules</h2>
+      <p>
+        It is possible to use some modules without any kind of extra installation. You can look them in the next <a class="link" href="https://www.w3schools.com/nodejs/ref_modules.asp">link</a>
+      </p>
+
+      <h2>Include Modules</h2>
+      <p>
+        To include a module, it is necessary to use <code>require()</code> function with the name of the module.
+        <br>
+        <code>var http = require('http');</code>
+        <br>
+        Using this, the application has access to the HTTP module, and is able to create a server.
+      </p>
+
+      <h2>Create Your Own Modules</h2>
+      <p>
+        It is possible to create your own modules, and then easy include them in your applications. To do it is necessary to use the keyword <code>exports</code>:
+        <br>
+        <code>exports.myDateTime = function () { return Date(); };</code>
+      </p>
+
+      <h2>Include Your Own Module</h2>
+      <p>
+        To include oyur module, is necessary to use the same notation like if you are trying to use a normal module:
+        <br>
+        <code>var dt = require('/myfirstmodule');</code>
+        <br>
+        You should use the path where your module is.
+      </p>
+    </div>
+
+    <div class="nodeJsHttpModule">
+      <h1>Node.js HTTP Module</h1>
+
+      <h2>The Built-in HTTP Module</h2>
+      <p>
+        This module allows to transmit data using HTTP.
+      </p>
+
+      <h2>Node.js as a Web Server</h2>
+      <p>
+        The HTTP module can create an HTTP server that listens to server ports and gives a response back to the client.
+        <br>
+        You can use the <code>createServer()</code> method to create an HTTP server.
+      </p>
+
+      <h2>Add an HTTP Header</h2>
+      <p>
+        If the response fromt the HTTP server is supposed to be displayed as HTML, you should include an HTTP header with the correct content type:
+      </p>
+      <img src="./img/webdev/httpHeader.png" alt="HTTP Header">
+
+      <h2>Read the Query String</h2>
+      <p>
+        The <strong>req</strong> argument in the method allow to see the url where you are at the moment, for example, if you are in <code>localhost:8080/summer</code>, the <strong>req.url</strong> will show the word <code>/summer</code>.
+      </p>
+
+      <h2>Split the Query String</h2>
+      <p>
+        It is also possible to split some information from the Query, an example:
+      </p>
+      <img src="./img/webdev/splitQuery.png" alt="Split Query">
+      <p>
+        So if you put: <code>http://localhost:8080/?year=2017&month=July</code>, the result will be 2017 July
+      </p>
+    </div>
+
+    <div class="NodeJsFileSystemModule">
+      <h1>Node.js File System Module</h1>
+
+      <h2>Node-js as a File Server</h2>
+      <p>
+        The Node.js file system module allows you to work with the file system on your computer.
+        To include this module: <code>var fs = require('fs');</code>
+        <br>
+        Some common use for this module:
+      </p>
+      <ul>
+        <li>Read files</li>
+        <li>Create files</li>
+        <li>Update files</li>
+        <li>Delete files</li>
+        <li>Rename files</li>
+      </ul>
+
+      <h2>Read Files</h2>
+      <p>
+        The method <code>fs.readFile()</code> is used to read files on your computer.
+        <br>
+        If you have a <code>.html</code> file, you can use the Node.js module to read it an show it.
+      </p>
+      <img src="./img/webdev/readFile.png" alt="Read File">
+    </div>
+  </div>
+  <!-- Node.js Finish -->
+
+
+  <!-- Footer Start -->
+  <footer id="footer" class="footer-1">
+    <div class="main-footer widgets-dark typo-light">
+      <div class="container">
+        <div class="row">
+
+          <!-- First Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">Camilo Beltrán<span></span></h5>
+              <p>
+                If you want to know more about me, or want to get in touch, don't hesitate to write to me!
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content"><a href="./index.html">Home</a></div>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Web Development
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./html.html">HTML</a>
+                    <a class="dropdown-item" href="./css.html">CSS</a>
+                    <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
+                    <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
+                    <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./nodejs.html">Node.js</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Fourth Col -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="wodget no-box">
+              <h5 class="widget-title">Contact<span></span></h5>
+              <ul class="social-footer2">
+                <li>
+                  <a href="https://twitter.com/beltran9c" title="twitter" target="_blank">
+                    <img src="./img/icons/twitter.svg" alt="twitter" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/beltran9c/" title="instagram" target="_blank">
+                    <img src="./img/icons/instagram.svg" alt="instagram" width="30" height="30">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mailto:ca.beltran10@uniandes.edu.co" title="glorythemes">
+                    <img src="./img/icons/gmail.svg" alt="gmail" width="30" height="30">
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2019 Camilo Beltran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Finish -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- TimeLine JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+
+  <script src="js/timeLine.js"></script>
+</body>
+</html>
