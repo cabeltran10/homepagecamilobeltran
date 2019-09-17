@@ -77,167 +77,81 @@
     </nav>
     <!-- Header Finish -->
 
-    <!-- Boxmodel Start -->
-
+    <!-- MERN Start -->
     <div class="container">
-      <h1>The Box Model</h1>
-      <p>
-        Para poder organizar los bordes se puede usar el modelo llamado The Box
-        Model. La forma de este se muestra en la siguiente imagen.
-      </p>
-      <img src="./img/webdev/boxmodel.png" alt="The Box Model" />
+      <div class="introduction">
+        <h1>Introduction</h1>
 
-      <br />
-
-      <div class="createBorder">
-        <h1>Create a Border</h1>
+        <h2>Preparation process</h2>
         <p>
-          Es posible la creacion de bordes, los cuales siguen el Box Model
-          mostrado, para esto se deben asignar 3 valores a <code>border</code>,
-          estos valores son <code>thickness</code>, <code>type</code> y por
-          ultimo <code>color</code>, el cual como se menciona en otra seccion
-          puede ser RGB o Hex o definido por CSS.
-        </p>
-
-        <p class="borderExample">
-          En este parrafo se muestra un ejemplo de un borde con los siguientes
-          valores:
+          You need to be sure to have install some components so you can work
+          fine. The first one is <code>node.js</code>, you can check if you
+          already have it or not just write <code>node -v</code> in the
+          terminal.
           <br />
-          <code>boder: 2px solid black;</code>
+          If you don't have it just need to go to
+          <a href="https://nodejs.org/en/">Node.js</a> and continue the
+          instructions.
+          <br />
+          Then you have to create an initial react package, you can create a
+          complete proyect using node, just write
+          <code>npx create-react-app &lt;app-name&gt;</code> this code will
+          create a directory with all you need to start the application.
         </p>
       </div>
 
-      <div class="createPadding">
-        <h1>Padding</h1>
-        <p class="borderExample2">
-          El Padding es usado para dar una distancia entre el border y el
-          elemento como tal, con el uso de esta es posible dar un espaciado con
-          el fin de que no quede el borde pegado al elemento.
-          <br />
-          En este parrafo se usa un <code>padding: 20px</code> el resto es igual
-          que el ejempo anterior.
-        </p>
-      </div>
-
-      <div class="createMargin">
-        <h1>Margin</h1>
-        <p class="borderExample3">
-          Similar al caso anterior, la margen es el espacio entre un elemento y
-          otro, esto permite que por ejemplo dos cuadros no esten juntos entre
-          ellos y con esto dar una mejor visualizacion.
-          <br />
-          En este caso se usa un <code>margin: 2rem;</code>
-        </p>
+      <div class="preparation">
+        <h1>Let's Start</h1>
         <p>
-          En el caso de las margenes es posible asignar un valor unicamente para
-          alguna de las caras del elemento, por ejemplo solo la superior, o la
-          inferior o si se desea varias a la vez sin llegar a todas. Esto
-          tambien permite que sea puedan implementar medidas independientes.
+          First you need to have a directory where you are going to work. Once
+          there, the first command you should do is <code>npm init</code>, and
+          answer all the questions it ask you you set it up.
         </p>
-        <ul>
-          <li><code>margin-top</code></li>
-          <li><code>margin-bottom</code></li>
-          <li><code>margin-left</code></li>
-          <li><code>margin-right</code></li>
-        </ul>
-      </div>
 
-      <div class="understandDisplay">
-        <h1>Understanding Display</h1>
+        <h2>Modules dependencies</h2>
+        <h3>For deployment</h3>
         <p>
-          El Display en el que se muestra el contenido de una pagina se puede
-          organizar de diferentes maneras, puede ser en <code>block</code> o
-          tambien es posible que sea <code>inline</code>, las diferencias se
-          muestran en la siguiente imagen.
+          We are going to install some dependencies, in this case the first one
+          will be Express, to do it just write <code>npm i express</code>, then
+          we also need Concurrently, this is used to let the future client use
+          the app easy, it is not necessary if you don't want it. To install il
+          just write <code>npm i concurrently</code>. 
+          <br>
+          If you want to organize better all the routes, if your app have many 
+          routes also include the next module: <code>npm i express-mongo-db</code>, 
+          and also, as we are going to work with mongodb in this case, run 
+          <code>npm i mongodb</code>
         </p>
-
-        <img src="./img/webdev/display.png" alt="Display" />
-
+        <h3>For development</h3>
         <p>
-          Por defecto el Display que viene en una pagina es de tipo
-          <code>block</code>, por lo cual si se decide cambiar se puede hacer
-          con el uso de:
-          <br />
-          <code>displlay: inline;</code>
+          For development, we will install another dependencie, it is call
+          Nodemon, this let you run the server and automatically refresh it when
+          you change something so you don't have to stop and start again. to do
+          it just write <code>npm i nodemon --save-dev</code>, the command is a
+          little bit different so you can save it just for development.
+          <br>
+          To work better with environment variables, just add <code>npm i --save-dev dotenv</code>
         </p>
 
-        <h3>En block</h3>
-
-        <ul>
-          <li><a href="#">A</a></li>
-          <li><a href="#">B</a></li>
-          <li><a href="#">C</a></li>
-        </ul>
-
-        <h3>En inline</h3>
-
-        <nav>
+        <h2>Lets continue</h2>
+        <p>
+            Now just go to the <code>package.json</code> file to make some changes, 
+            in the <code>scripts</code> section, lets put the next ones:
+          <br>
           <ul>
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
+              <li><code>"start": "node server.js",</code></li>
+              <li><code>"server": "nodemon server.js",</code></li>
+              <li><code></code></li>
+              <li><code></code></li>
           </ul>
-        </nav>
-      </div>
-
-      <div class="usingFloat">
-        <h1>Using Float</h1>
-        <p>
-          Esta manera se usa con el fin de poder acomodar los elementos de una
-          manera mucho mas sencilla. Por ejemplo si se desea que un boton se
-          encuentre a un costado de la pagina, en lugar de decir que tamaño de
-          margen tener se le puede ubicar al lado derecho sin problema, aunque
-          la pantalla cambie de tamaño este quedara en la misma posicion. Por
-          ejemplo el siguiente boton:
+          <br>
+          Now you need to create a <code>server.js</code> file. And lets start working on it.
+          <br>
         </p>
-        <div class="contact-btn"><a>Contact</a></div>
-      </div>
-
-      <div class="displayFlex">
-        <h1>Display: Flex</h1>
-        <p>
-          El uso de <code>display:flex;</code> permite que los elementos se
-          alineen de manera horizontal. Es posible realizar combinaciones que
-          permiten un mejor ajuste del contenido.
-        </p>
-        <p>
-          Si se usa un padre y un hijo, se puede hacer esto con el uso de
-          <code>flex-wrap: wrap;</code>, lo que no permite que los hijos se
-          muevan fuera de la pagina en caso que se cambie el tamaño.
-        </p>
-        <p>
-          Por ultimo esta el <code>justify-content: center;</code>, este permite
-          justificar el contenido para que se alineen de alguna manera en
-          especifico.
-        </p>
-      </div>
-
-      <div class="workingPosition">
-        <h1>Working with Position</h1>
-        <p>
-          Funciona cuando se desea dejar el elemento en una posicion especifica
-          de la pagina, esto hace que el elemento se posicione en donde uno
-          desee segun el argumento que se desee, para esto se usa:
-
-          <br />
-
-          <code>position: relative;</code>
-          <br />
-          Luego de esto es posible usar <code>top</code>, <code>left</code>,
-          <code>bottom</code> y <code>left</code> con el fin de asignar la
-          posicion que se desea, por ejemplo:
-        </p>
-        <div class="positionExample">
-          <code>position: relative;</code>
-          <br />
-          <code>top: 10px;</code>
-          <br />
-          <code>left: 50px;</code>
-        </div>
       </div>
     </div>
 
-    <!-- Boxmodel Finish -->
+    <!-- MERN Finish -->
 
     <!-- Footer Start -->
     <footer id="footer" class="footer-1">
@@ -377,10 +291,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
-    <!-- TimeLine JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
 
     <script src="js/timeLine.js"></script>
   </body>

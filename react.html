@@ -77,167 +77,67 @@
     </nav>
     <!-- Header Finish -->
 
-    <!-- Boxmodel Start -->
+    <!-- React Start -->
 
     <div class="container">
-      <h1>The Box Model</h1>
-      <p>
-        Para poder organizar los bordes se puede usar el modelo llamado The Box
-        Model. La forma de este se muestra en la siguiente imagen.
-      </p>
-      <img src="./img/webdev/boxmodel.png" alt="The Box Model" />
+      <div class="introduction">
+        <h1>Introduction</h1>
 
-      <br />
-
-      <div class="createBorder">
-        <h1>Create a Border</h1>
+        <h2>Declarative</h2>
         <p>
-          Es posible la creacion de bordes, los cuales siguen el Box Model
-          mostrado, para esto se deben asignar 3 valores a <code>border</code>,
-          estos valores son <code>thickness</code>, <code>type</code> y por
-          ultimo <code>color</code>, el cual como se menciona en otra seccion
-          puede ser RGB o Hex o definido por CSS.
+          Make itt painless to create interactive UIs. Deisgn simple views for
+          each state in your application, and React will efficientrly update and
+          render just the right components.
         </p>
 
-        <p class="borderExample">
-          En este parrafo se muestra un ejemplo de un borde con los siguientes
-          valores:
+        <h2>Component-Based</h2>
+        <p>
+          Build encapsulate components that manage their own state, ten compose
+          them to make complex UIs. The component logic is write in JavaScript
+          instead of templates.
+        </p>
+
+        <h2>A Simple Component</h2>
+        <p>
+          React components implement a <code>render()</code> method that takes
+          input data and returns what to display.
           <br />
-          <code>boder: 2px solid black;</code>
+          <strong>JSX is optional and not required to use React</strong>
+        </p>
+
+        <h2>A Statefil Component</h2>
+        <p>
+          In addition to taking input data, a component can maintan internal
+          state data. When a component's state data changes, the rendered markup
+          will be updated by re-invoking <code>render()</code>
+        </p>
+
+        <h2>An Application</h2>
+        <p>
+          Using <code>props</code> and <code>state</code>, we can put together a
+          small Todo application.
+          <br />
+          It is possible to use <code>state</code> to track the current list of
+          items (i.e).
+        </p>
+
+        <h2>A Component Using External Plugins</h2>
+        <p>
+          Rect allows you to interface with other libraries and frameworks.
         </p>
       </div>
 
-      <div class="createPadding">
-        <h1>Padding</h1>
-        <p class="borderExample2">
-          El Padding es usado para dar una distancia entre el border y el
-          elemento como tal, con el uso de esta es posible dar un espaciado con
-          el fin de que no quede el borde pegado al elemento.
-          <br />
-          En este parrafo se usa un <code>padding: 20px</code> el resto es igual
-          que el ejempo anterior.
-        </p>
-      </div>
+      <div class="tutorial">
+        <h1>Tutorial</h1>
 
-      <div class="createMargin">
-        <h1>Margin</h1>
-        <p class="borderExample3">
-          Similar al caso anterior, la margen es el espacio entre un elemento y
-          otro, esto permite que por ejemplo dos cuadros no esten juntos entre
-          ellos y con esto dar una mejor visualizacion.
-          <br />
-          En este caso se usa un <code>margin: 2rem;</code>
-        </p>
+        <h2>Before We Start the Tutorial</h2>
         <p>
-          En el caso de las margenes es posible asignar un valor unicamente para
-          alguna de las caras del elemento, por ejemplo solo la superior, o la
-          inferior o si se desea varias a la vez sin llegar a todas. Esto
-          tambien permite que sea puedan implementar medidas independientes.
+          This tutorial will help to build a small game.
         </p>
-        <ul>
-          <li><code>margin-top</code></li>
-          <li><code>margin-bottom</code></li>
-          <li><code>margin-left</code></li>
-          <li><code>margin-right</code></li>
-        </ul>
-      </div>
-
-      <div class="understandDisplay">
-        <h1>Understanding Display</h1>
-        <p>
-          El Display en el que se muestra el contenido de una pagina se puede
-          organizar de diferentes maneras, puede ser en <code>block</code> o
-          tambien es posible que sea <code>inline</code>, las diferencias se
-          muestran en la siguiente imagen.
-        </p>
-
-        <img src="./img/webdev/display.png" alt="Display" />
-
-        <p>
-          Por defecto el Display que viene en una pagina es de tipo
-          <code>block</code>, por lo cual si se decide cambiar se puede hacer
-          con el uso de:
-          <br />
-          <code>displlay: inline;</code>
-        </p>
-
-        <h3>En block</h3>
-
-        <ul>
-          <li><a href="#">A</a></li>
-          <li><a href="#">B</a></li>
-          <li><a href="#">C</a></li>
-        </ul>
-
-        <h3>En inline</h3>
-
-        <nav>
-          <ul>
-            <li><a href="#">A</a></li>
-            <li><a href="#">B</a></li>
-            <li><a href="#">C</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="usingFloat">
-        <h1>Using Float</h1>
-        <p>
-          Esta manera se usa con el fin de poder acomodar los elementos de una
-          manera mucho mas sencilla. Por ejemplo si se desea que un boton se
-          encuentre a un costado de la pagina, en lugar de decir que tamaño de
-          margen tener se le puede ubicar al lado derecho sin problema, aunque
-          la pantalla cambie de tamaño este quedara en la misma posicion. Por
-          ejemplo el siguiente boton:
-        </p>
-        <div class="contact-btn"><a>Contact</a></div>
-      </div>
-
-      <div class="displayFlex">
-        <h1>Display: Flex</h1>
-        <p>
-          El uso de <code>display:flex;</code> permite que los elementos se
-          alineen de manera horizontal. Es posible realizar combinaciones que
-          permiten un mejor ajuste del contenido.
-        </p>
-        <p>
-          Si se usa un padre y un hijo, se puede hacer esto con el uso de
-          <code>flex-wrap: wrap;</code>, lo que no permite que los hijos se
-          muevan fuera de la pagina en caso que se cambie el tamaño.
-        </p>
-        <p>
-          Por ultimo esta el <code>justify-content: center;</code>, este permite
-          justificar el contenido para que se alineen de alguna manera en
-          especifico.
-        </p>
-      </div>
-
-      <div class="workingPosition">
-        <h1>Working with Position</h1>
-        <p>
-          Funciona cuando se desea dejar el elemento en una posicion especifica
-          de la pagina, esto hace que el elemento se posicione en donde uno
-          desee segun el argumento que se desee, para esto se usa:
-
-          <br />
-
-          <code>position: relative;</code>
-          <br />
-          Luego de esto es posible usar <code>top</code>, <code>left</code>,
-          <code>bottom</code> y <code>left</code> con el fin de asignar la
-          posicion que se desea, por ejemplo:
-        </p>
-        <div class="positionExample">
-          <code>position: relative;</code>
-          <br />
-          <code>top: 10px;</code>
-          <br />
-          <code>left: 50px;</code>
-        </div>
       </div>
     </div>
 
-    <!-- Boxmodel Finish -->
+    <!-- React Finish -->
 
     <!-- Footer Start -->
     <footer id="footer" class="footer-1">

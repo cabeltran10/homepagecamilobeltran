@@ -20,10 +20,24 @@
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
       <a href="./index.html" class="navbar-brand">
-        <img src="./img/logos/cb-logo-white.png" alt="Camilo Beltran Logo" width="30" height="30" class="d-inline-block alignt-top">
+        <img
+          src="./img/logos/cb-logo-white.png"
+          alt="Camilo Beltran Logo"
+          width="30"
+          height="30"
+          class="d-inline-block alignt-top"
+        />
         Camilo Beltran
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -33,7 +47,15 @@
             <a class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               Web Development<span class="sr-only">(current)</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,6 +64,8 @@
               <a class="dropdown-item" href="./boxmodel.html">Box Model</a>
               <a class="dropdown-item" href="./bootstrap.html">Bootstrap</a>
               <a class="dropdown-item" href="./javascript.html">JavaScript</a>
+              <a class="dropdown-item" href="./react.html">React</a>
+              <a class="dropdown-item" href="./mern.html">MERN</a>
             </div>
           </li>
         </ul>
@@ -62,20 +86,20 @@
           En JavaScript es posible escribir en consola con el fin de revisar si lo que se esta haciendo es correcto y poder detectar errores en el momento adecuado.
         </p>
         <p>
-          Para poder hacer esto se usa el codigo: <code>console.log();</code>
+          Para poder hacer esto se usa el código: <code>console.log();</code>
         </p>
       </div>
 
       <div class="comentarios">
         <h2>Comments</h2>
         <p>
-          La programacion realmente termina siendo algo muy colaborativo, por lo que se debe de poder entregar el codigo a otra persona y que este sea lo mas claro posible, para eso se pueden usar comentarios, estos se pueden insertar en un archivo <code>.js</code> con el uso de <code>//</code> al iniciar una linea. Esto no sera visible al ejecutar la aplicacion, unicamente en el codigo.
+          La programación realmente termina siendo algo muy colaborativo, por lo que se debe de poder entregar el código a otra persona y que este sea lo mas claro posible, para eso se pueden usar comentarios, estos se pueden insertar en un archivo <code>.js</code> con el uso de <code>//</code> al iniciar una linea. Esto no sera visible al ejecutar la aplicación, unicamente en el código.
         </p>
         <p>
-          Tambien es posible hacer varias lineas de comentarios, para esto se usa: <code>/*</code> y se finaliza con <code>*/</code>
+          También es posible hacer varias lineas de comentarios, para esto se usa: <code>/*</code> y se finaliza con <code>*/</code>
         </p>
         <p>
-          Por ultimo, para comentar en la misma linea en la que hay codigo, es posible usar la notacion: <code>/*IGNORED*/</code>, donde se reemplaza el IGNORED con el comentario.
+          Por ultimo, para comentar en la misma linea en la que hay código, es posible usar la notación: <code>/*IGNORED*/</code>, donde se reemplaza el IGNORED con el comentario.
         </p>
       </div>
 
@@ -910,7 +934,93 @@
     </div>
 
     <div class="browserCompatibility">
+      <h1>Browser Compatibility and Transpilation</h1>
 
+      <h2>Introduction</h2>
+      <p>
+        Se debe tener en cuenta que muchos lenguajes, al estar cambiando dejan de ser compatibles para un navegador, esto se debe mas que todo a problemas de seguridad ya que con los nuevos cambios, se pueden llegar a considerar inseguros.
+        <br>
+        La solución a esto es que cuando un lenguaje tiene cambios, se deben de verificar sus problemas de seguridad y corregirlos con el fin de que el navegador los reconozca y funcionen de manera adecuada.
+      </p>
+
+      <h2>caniuse.com</h2>
+      <p>
+        Desde que salio ES6, las demás compañías han ido incluyendo su soporte lentamente, pero siguen existiendo problemas de compatibilidad.
+        <br>
+        Para saber en que navegadores es soportado algún lenguaje es posible usar <a href="http://caniuse.com/">caniuse.com</a> con el fin de determinar que se puede y que no se puede usar según un navegador determinado.
+      </p>
+
+      <h2>Why ES6?</h2>
+      <p>
+        Existen diferencias en la manera de escribir ES5 y ES6, con lo cual se debe tener presente ciertos cambios. Uno de los mas notables es el cambio de la palabra clave <code>var</code>, la cual ahora se usa con las palabras claves <code>let</code> y <code>const</code> como reemplazo a la misma. Esto se hizo ya que el uso de <code>var</code> era mucho mas amplio por lo que generaba inconvenientes.
+      </p>
+
+      <h2>npm init</h2>
+      <p>
+        Existen maneras de traducir lenguaje de ES6 a ES5, una de ellas es por medio del <code>package.json</code>, en el cual se puede asignar ciertos paquetes adicionales que permiten este tipo de modificaciones.
+      </p>
+
+      <h2>Install Node Packages</h2>
+      <p>
+        Tambien es posible usar <code>npm</code> para instalar nuevos paquetes de node, con lo cual es posible hacer muchas cosas a futuro. Uno de los paquetes que se ha mencionado varias veces es el de <code>bable-cli</code>, con el que es posible transcribir lenguaje de ES6 a ES5.
+      </p>
+    </div>
+
+    <div class="intermediateModules">
+      <h1>Intermediate JavaScript Modules</h1>
+
+      <h2>Hello Modules</h2>
+      <p>
+        Son piezas de códigos que se pueden importar a un programa para ser utilizadas.
+      </p>
+
+      <h2>module.exports</h2>
+      <p>
+        Es posible crear nuestros propios módulos o usar los de otras personas. Para exportar modulos se debe usar la notación <code>module.exports</code>.
+        <br>
+        También es posible usar el <code>.exports</code> con mas de un valor, es posible exportar un objeto completo o un conjunto de cosas.
+      </p>
+      <img src="./img/webdev/moduleExport.png" alt="Module Export">
+      <img src="./img/webdev/moduleExport2.png" alt="Module Export">
+
+      <h2>require()</h2>
+      <p>
+        Para poder importar un modulo en otro archivo se usa <code>require()</code>, este toma el path del modulo para poder importarlo.
+      </p>
+      <img src="./img/webdev/requireModule.png" alt="Require Module">
+
+      <h2>export default</h2>
+      <p>
+        Con la llegada de ES6, es posible realizar la exportacion de modulos de otra manera, usando <code>export default</code>.
+      </p>
+
+      <h2>import</h2>
+      <p>
+        Tambien en ES6 se da una nueva forma de importar, esto se hace con <code>import AAA from './path';</code>
+      </p>
+
+      <h2>Named Exports</h2>
+      <p>
+        ES6 introduce otra forma de exportar:
+      </p>
+      <img src="./img/webdev/namedExportES6.png" alt="Named Export">
+
+      <h2>Named Imports</h2>
+      <p>
+        Para importar objetos que están almacenados en una variable, se usa <code>import</code> y se incluyen sus variables en <code>{}</code>
+      </p>
+      <img src="./img/webdev/namedImportES6.png" alt="Named Import">
+
+      <h2>Export Named Exports</h2>
+      <p>
+        También es posible exportar cosas justo apenas estas son escritas:
+      </p>
+      <img src="./img/webdev/exportNamedExports.png" alt="Export Named Exports">
+
+      <h2>Import Named Imports</h2>
+      <p>
+
+      </p>
     </div>
 
   </div>
